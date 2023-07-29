@@ -6,6 +6,6 @@
     <title>Diligens | Home</title>
 </head>
 <body>
-    
+    <?php include 'src/views/components/navbar/navbar.html' ?>
 </body>
 </html>
