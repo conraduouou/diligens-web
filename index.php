@@ -1,13 +1,13 @@
 <?php
-$viewsPath = 'src/views/';
+require __DIR__ . "/inc/config.php";
 
 $uri = $_SERVER['REQUEST_URI'];
 
-$baseUrl = '/diligens_web/index.php';
 $requestPath = strtok($uri, '?');
 
+
 $routes = [
-    $baseUrl => $viewsPath . 'home/home.php',
+    BASE_URL_PATH => VIEWS_PATH . '/home/home.php',
 ];
 
 if (array_key_exists($requestPath, $routes)) {
