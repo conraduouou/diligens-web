@@ -5,7 +5,6 @@ $uri = $_SERVER['REQUEST_URI'];
 
 $requestPath = strtok($uri, '?');
 
-
 $routes = [
     BASE_URL_PATH => VIEWS_PATH . '/home/home.php',
 ];

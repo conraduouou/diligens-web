@@ -1,5 +1,3 @@
-<?php require PROJECT_ROOT_PATH . "inc/config.php" ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
