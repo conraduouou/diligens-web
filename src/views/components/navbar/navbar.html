@@ -1,41 +1,30 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <link rel="stylesheet" href="assets/style.css">
-        <link rel="stylesheet" href="src/views/components/navbar/navbar.css">
-    </head>
 
-    <header>
-        <div class="navbar" id="myNavbar">
-            <nav>
-                <img class="diligens-logo" src="assets/logo.svg" alt="Logo" style="height: 80px;">
-                <div class="diligens">Diligens</div>
-                <div class="rightSection">
+<head>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="src/views/components/navbar/navbar.css">
+</head>
+
+<header>
+    <div class="navbar" id="myNavbar">
+        <nav>
+            <img class="diligens-logo" src="assets/logo.svg" alt="Logo" style="height: 80px;">
+            <div class="diligens">Diligens</div>
+            <div class="rightSection">
                 <a class="links" href="#">Services</a>
                 <a class="links" href="#">Rooms</a>
                 <a class="links" href="#">Stories</a>
                 <a class="links" href="#">About Us</a>
                 <a class="links" href="#">Contact Us</a>
-            </nav>
-        </div>
+        </nav>
+    </div>
 
-        <script>
-            window.onscroll = function() {myFunction()};
-                
-            var header = document.getElementById("myNavbar");
-            var stick = header.offsetTop;
-                
-            function myFunction() {
-                if (window.pageYOffset > stick) {
-                    header.classList.add("FixedHeader");
-                } else {
-                    header.classList.remove("FixedHeader");
-                }
-            }
-        </script>
-    </header>
+    <script src="src/views/components/navbar/navbar.js"></script>
+</header>
 
-    <body>
-        
-    </body>
+<body>
+
+</body>
+
 </html>
