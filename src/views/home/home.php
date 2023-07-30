@@ -11,7 +11,7 @@
 
 <body>
     <?php include COMPONENTS_PATH . '/navbar/navbar.html' ?>
-    <div class="flex-container-row">
+    <div class="flex-container-row first-section">
         <img src="assets/illustration1.svg" alt="illustration 1" class="illustration">
         <div class="flex-expand"></div>
         <div class="color-green-700 margin-auto">
