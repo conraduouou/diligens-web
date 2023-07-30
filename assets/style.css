@@ -1,14 +1,163 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
-/* :root {
+:root {
+    /* Black */
+    --black: #1b1b1b;
+    /* White */
+    --white: #ffffff;
+    /* Neutral */
     --neutral100: #fafafa;
-    --neutral
-} */
-
-.text-color-neutral100 {
-
+    --neutral200: #e0e0e0;
+    --neutral300: #c7c7c7;
+    --neutral400: #adadad;
+    --neutral500: #919191;
+    --neutral600: #787878;
+    --neutral700: #5e5e5e;
+    --neutral800: #454545;
+    --neutral900: #292929;
+    /* Red */
+    --red100: #ffeded;
+    --red200: #f2bbbb;
+    --red300: #e58c8c;
+    --red400: #d96262;
+    --red500: #cb3c3c;
+    --red600: #a62828;
+    --red700: #801717;
+    --red800: #5c0b0b;
+    --red900: #360303;
+    /* Green */
+    --green100: #defadd;
+    --green200: #b3edaf;
+    --green300: #8be386;
+    --green400: #64d65e;
+    --green500: #45ca3d;
+    --green600: #3ca629;
+    --green700: #1f821a;
+    --green800: #1c610f;
+    --green900: #093e06;
+    /* Yellow */
+    --yellow100: #faf8d5;
+    --yellow200: #f2f0a7;
+    --yellow300: #ebe77f;
+    --yellow400: #e3d359;
+    --yellow500: #dbd536;
+    --yellow600: #b2ae20;
+    --yellow700: #878310;
+    --yellow800: #5e5b06;
+    --yellow900: #343200;
+    /* Blue */
+    --blue100: #eff9ff;
+    --blue200: #c6e5f7;
+    --blue300: #9dd0ed;
+    --blue400: #77bde5;
+    --blue500: #53a9db;
+    --blue600: #3586b5;
+    --blue700: #1d648c;
+    --blue800: #0d4463;
+    --blue900: #03273c;
 }
 
-.text-style-display-112 {
-    font-family: 'IBM Plex Sans';   
+/****** FONTS *******/
+
+/* WEIGHTS */
+.text-style-normal-weight {
+    font-weight: 400
+}
+
+.text-style-medium-weight {
+    font-weight: 500;
+}
+
+.text-style-semibold-weight {
+    font-weight: 600;
+}
+
+.text-style-bold-weight {
+    font-weight: 700;
+}
+
+/* SIZES */
+.text-style-size-112 {
+    font-size: 112px;
+}
+
+.text-style-size-80 {
+    font-size: 80px;
+}
+
+.text-style-size-60 {
+    font-size: 60px;
+}
+
+.text-style-size-48 {
+    font-size: 48px;
+}
+
+.text-style-size-36 {
+    font-size: 36px;
+}
+
+.text-style-size-28 {
+    font-size: 28px;
+}
+
+.text-style-size-24 {
+    font-size: 24px;
+}
+
+.text-style-size-22 {
+    font-size: 22px;
+}
+
+.text-style-size-20 {
+    font-size: 20px;
+}
+
+.text-style-size-18 {
+    font-size: 18px;
+}
+
+.text-style-size-16 {
+    font-size: 16px;
+}
+
+.text-style-size-14 {
+    font-size: 14px;
+}
+
+.text-style-size-12 {
+    font-size: 12px;
+}
+
+/* DISPLAY  */
+.text-style-display {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -4.48px;
+}
+
+/* HEADLINE */
+.text-style-headline {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -1.92px;
+}
+
+/* TITLE */
+.text-style-title {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.88px;
+}
+
+/* BODY */
+.text-style-body {
+    font-family: Zilla Slab;
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: -0.4px;
 }
