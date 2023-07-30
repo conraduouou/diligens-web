@@ -7,14 +7,7 @@
 </head>
 
 <body>
-    <div class="story" style="
-    <?php
-    if ($index == 1)
-        echo 'margin-top: 160px';
-    else if ($index == 3)
-        echo 'margin-top: 100px';
-    ?>
-    ">
+    <div class="story">
         <div class="circle-story flex-container-row" style="margin-bottom: 52px">
             <img src="assets/story-illustration<?php echo $index; ?>.svg" alt="story<?php echo $index; ?>"
                 class="margin-auto">

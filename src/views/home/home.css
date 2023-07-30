@@ -30,18 +30,17 @@
     margin-bottom: auto;
 }
 
-.divider {
-    height: 26px;
-    margin-bottom: 80px;
-    margin-top: 52px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 /** SPECIFIC CSS **/
 .illustration {
     display: inline-block;
 }
+
+.divider {
+    height: 26px;
+    margin: 60px auto 60px
+}
+
 
 .first-section {
     padding: 82.5px;
@@ -50,12 +49,33 @@
 }
 
 .second-section {
-    padding-top: 60px;
-    padding-left: 14%;
-    padding-right: 12%;
-    padding-bottom: 135px;
+    padding: 60px 12% 20px 14%;
+}
+
+.second-section-header-div {
+    margin-bottom: 60px;
+}
+
+.second-section-header {
+    margin-left: 45px;
+}
+
+.second-section-caption {
+    margin-bottom: 70px;
 }
 
 .third-section {
-    align-items: center;
+    margin-bottom: 80px;
+}
+
+.third-section-header {
+    margin-bottom: 12px;
+}
+
+.third-section-caption {
+    margin-bottom: 60px;
+}
+
+.third-section-stories {
+    margin-bottom: 60px;
 }
