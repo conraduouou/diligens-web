@@ -1,7 +1,11 @@
 @media screen and (min-width: 1280px) {
     .second-section-first {
-        width: 38%
+        width: 39%
     }
+}
+
+.center {
+    text-align: center;
 }
 
 .flex-container-row {
@@ -32,13 +36,13 @@
 
 .first-section {
     padding: 82.5px;
-    padding-left: 92px;
-    padding-right: 113px;
+    padding-left: 10%;
+    padding-right: 12%;
 }
 
 .second-section {
     padding-top: 60px;
-    padding-left: 135px;
-    padding-right: 145px;
+    padding-left: 14%;
+    padding-right: 12%;
     padding-bottom: 135px;
 }
