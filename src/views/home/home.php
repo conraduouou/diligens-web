@@ -77,9 +77,18 @@
         include COMPONENTS_PATH . '/primary_button/primary_button.php';
         ?>
     </div>
-    <div class="flex-container-col">
-        <div class="flex-container-row">
-
+    <div class="news-section flex-container-col">
+        <h2
+            class="news-section-header color-green-700 text-style-display text-style-weight-semibold text-style-size-48">
+            Stay informed!<br>
+            Explore our latest articles.
+        </h2>
+        <div class="news-section-article-container flex-container-row">
+            <?php
+            for ($x = 0; $x < 3; $x++) {
+                include COMPONENTS_PATH . '/news_in_home/news_in_home.php';
+            }
+            ?>
         </div>
     </div>
 </body>

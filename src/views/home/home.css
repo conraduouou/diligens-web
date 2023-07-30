@@ -48,6 +48,7 @@
     padding-right: 12%;
 }
 
+/*** SERVICES ***/
 .services-section {
     padding: 60px 12% 20px 14%;
 }
@@ -64,6 +65,7 @@
     margin-bottom: 70px;
 }
 
+/*** STORIES ***/
 .stories-section {
     margin-bottom: 80px;
 }
@@ -78,4 +80,17 @@
 
 .stories-section-stories {
     margin-bottom: 60px;
+}
+
+/*** NEWS ***/
+.news-section {
+    padding: 64px 120px 132px;
+}
+
+.news-section-header {
+    margin-right: auto;
+}
+
+.news-section-article-container {
+    justify-content: space-between;
 }

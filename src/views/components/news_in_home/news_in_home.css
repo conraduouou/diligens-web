@@ -1,0 +1,25 @@
+.news-section-article {
+    width: 374px;
+}
+
+.news-section-image {
+    height: 317px;
+    background-color: #D9D9D9;
+}
+
+.news-section-label {
+    margin: 28px 0 18px;
+}
+
+.news-section-label-line {
+    display: inline-block;
+    width: 80px;
+    height: 4px;
+    margin: auto 0;
+    background-color: #359923;
+}
+
+.news-section-label-text {
+    display: inline;
+    margin-left: 12px;
+}
