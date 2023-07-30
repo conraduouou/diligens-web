@@ -1,3 +1,9 @@
+@media screen and (min-width: 1280px) {
+    .second-section-first {
+        width: 38%
+    }
+}
+
 .flex-container-row {
     display: flex;
 }
@@ -14,6 +20,11 @@
     margin: auto;
 }
 
+.margin-vertical-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 /** SPECIFIC CSS **/
 .illustration {
     display: inline-block;
@@ -23,4 +34,11 @@
     padding: 82.5px;
     padding-left: 92px;
     padding-right: 113px;
+}
+
+.second-section {
+    padding-top: 60px;
+    padding-left: 135px;
+    padding-right: 145px;
+    padding-bottom: 135px;
 }
