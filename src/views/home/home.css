@@ -1,5 +1,5 @@
 @media screen and (min-width: 1280px) {
-    .second-section-first {
+    .services-section-first {
         width: 40%
     }
 }
@@ -48,34 +48,34 @@
     padding-right: 12%;
 }
 
-.second-section {
+.services-section {
     padding: 60px 12% 20px 14%;
 }
 
-.second-section-header-div {
+.services-section-header-div {
     margin-bottom: 60px;
 }
 
-.second-section-header {
+.services-section-header {
     margin-left: 45px;
 }
 
-.second-section-caption {
+.services-section-caption {
     margin-bottom: 70px;
 }
 
-.third-section {
+.stories-section {
     margin-bottom: 80px;
 }
 
-.third-section-header {
+.stories-section-header {
     margin-bottom: 12px;
 }
 
-.third-section-caption {
+.stories-section-caption {
     margin-bottom: 60px;
 }
 
-.third-section-stories {
+.stories-section-stories {
     margin-bottom: 60px;
 }

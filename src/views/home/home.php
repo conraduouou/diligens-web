@@ -27,16 +27,16 @@
             </p>
         </div>
     </div>
-    <div class="second-section flex-container-row">
-        <div class="second-section-first color-green-700">
-            <div class="second-section-header-div flex-container-row">
+    <div class="services-section flex-container-row">
+        <div class="services-section-first color-green-700">
+            <div class="services-section-header-div flex-container-row">
                 <img src="assets/logo.svg" class="logo" alt="Diligens Logo" height=105px>
                 <h2
-                    class="second-section-header text-style-display text-style-size-60 text-style-weight-bold margin-vertical-auto">
+                    class="services-section-header text-style-display text-style-size-60 text-style-weight-bold margin-vertical-auto">
                     Our Services</h2>
             </div>
             <p
-                class="second-section-caption margin-none text-style-label text-style-weight-medium text-style-size-28 text-style-align-justify">
+                class="services-section-caption margin-none text-style-label text-style-weight-medium text-style-size-28 text-style-align-justify">
                 We offer valuable insights to assist you in making well-informed business decisions. <br><br>
                 We don't consist of experts for nothing. Try contacting us now!
             </p>
@@ -51,17 +51,17 @@
             <img src="assets/illustration2.svg" alt="Illustration 2">
         </div>
     </div>
-    <div class="flex-container-col color-green-700 third-section">
+    <div class="stories-section flex-container-col color-green-700">
         <img src="assets/divider.svg" alt="divider" class="divider">
         <h2
-            class="third-section-header margin-none text-style-display text-style-weight-bold text-style-size-60 text-style-align-center">
+            class="stories-section-header margin-none text-style-display text-style-weight-bold text-style-size-60 text-style-align-center">
             Hear out our Stories
         </h2>
         <p
-            class="third-section-caption margin-none text-style-display text-style-weight-medium text-style-size-28 text-style-align-center">
+            class="stories-section-caption margin-none text-style-display text-style-weight-medium text-style-size-28 text-style-align-center">
             We like stories with good endings. We'll help you get yours, too.
         </p>
-        <div class="third-section-stories flex-container-row">
+        <div class="stories-section-stories flex-container-row">
             <?php
             $storyText = $storyText = "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum
                 has been the industry's standard dummy text ever since the 1500s.";
