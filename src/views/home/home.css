@@ -1,15 +1,16 @@
 @media screen and (min-width: 1280px) {
     .second-section-first {
-        width: 39%
+        width: 40%
     }
-}
-
-.center {
-    text-align: center;
 }
 
 .flex-container-row {
     display: flex;
+}
+
+.flex-container-col {
+    display: flex;
+    flex-direction: column;
 }
 
 .flex-expand {
@@ -29,6 +30,14 @@
     margin-bottom: auto;
 }
 
+.divider {
+    height: 26px;
+    margin-bottom: 80px;
+    margin-top: 52px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /** SPECIFIC CSS **/
 .illustration {
     display: inline-block;
@@ -45,4 +54,8 @@
     padding-left: 14%;
     padding-right: 12%;
     padding-bottom: 135px;
+}
+
+.third-section {
+    align-items: center;
 }

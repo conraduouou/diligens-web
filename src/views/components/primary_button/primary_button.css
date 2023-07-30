@@ -8,6 +8,11 @@
     transition: all 0.3s ease;
 }
 
+.primary-button-padding-132 {
+    padding-left: 132px;
+    padding-right: 132px;
+}
+
 .primary-button:hover {
     background-color: #1c610f;
 }
