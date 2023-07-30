@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
+
+/***** COLORS *****/
 :root {
     /* Black */
     --black: #1b1b1b;
@@ -58,22 +60,210 @@
     --blue900: #03273c;
 }
 
+.color-black {
+    color: var(--black);
+}
+
+.color-white {
+    color: var(--white);
+}
+
+.color-green-100 {
+    color: var(--green100)
+}
+
+.color-green-200 {
+    color: var(--green200)
+}
+
+.color-green-300 {
+    color: var(--green300)
+}
+
+.color-green-400 {
+    color: var(--green400)
+}
+
+.color-green-500 {
+    color: var(--green500)
+}
+
+.color-green-600 {
+    color: var(--green600)
+}
+
+.color-green-700 {
+    color: var(--green700)
+}
+
+.color-green-800 {
+    color: var(--green800)
+}
+
+.color-green-900 {
+    color: var(--green900)
+}
+
+.color-red-100 {
+    color: var(--red100)
+}
+
+.color-red-200 {
+    color: var(--red200)
+}
+
+.color-red-300 {
+    color: var(--red300)
+}
+
+.color-red-400 {
+    color: var(--red400)
+}
+
+.color-red-500 {
+    color: var(--red500)
+}
+
+.color-red-600 {
+    color: var(--red600)
+}
+
+.color-red-700 {
+    color: var(--red700)
+}
+
+.color-red-800 {
+    color: var(--red800)
+}
+
+.color-red-900 {
+    color: var(--red900)
+}
+
+.color-blue-100 {
+    color: var(--blue100)
+}
+
+.color-blue-200 {
+    color: var(--blue200)
+}
+
+.color-blue-300 {
+    color: var(--blue300)
+}
+
+.color-blue-400 {
+    color: var(--blue400)
+}
+
+.color-blue-500 {
+    color: var(--blue500)
+}
+
+.color-blue-600 {
+    color: var(--blue600)
+}
+
+.color-blue-700 {
+    color: var(--blue700)
+}
+
+.color-blue-800 {
+    color: var(--blue800)
+}
+
+.color-blue-900 {
+    color: var(--blue900)
+}
+
+.color-yellow-100 {
+    color: var(--yellow100)
+}
+
+.color-yellow-200 {
+    color: var(--yellow200)
+}
+
+.color-yellow-300 {
+    color: var(--yellow300)
+}
+
+.color-yellow-400 {
+    color: var(--yellow400)
+}
+
+.color-yellow-500 {
+    color: var(--yellow500)
+}
+
+.color-yellow-600 {
+    color: var(--yellow600)
+}
+
+.color-yellow-700 {
+    color: var(--yellow700)
+}
+
+.color-yellow-800 {
+    color: var(--yellow800)
+}
+
+.color-yellow-900 {
+    color: var(--yellow900)
+}
+
+.color-neutral-100 {
+    color: var(--neutral100)
+}
+
+.color-neutral-200 {
+    color: var(--neutral200)
+}
+
+.color-neutral-300 {
+    color: var(--neutral300)
+}
+
+.color-neutral-400 {
+    color: var(--neutral400)
+}
+
+.color-neutral-500 {
+    color: var(--neutral500)
+}
+
+.color-neutral-600 {
+    color: var(--neutral600)
+}
+
+.color-neutral-700 {
+    color: var(--neutral700)
+}
+
+.color-neutral-800 {
+    color: var(--neutral800)
+}
+
+.color-neutral-900 {
+    color: var(--neutral900)
+}
+
 /****** FONTS *******/
 
 /* WEIGHTS */
-.text-style-normal-weight {
+.text-style-weight-normal {
     font-weight: 400
 }
 
-.text-style-medium-weight {
+.text-style-weight-medium {
     font-weight: 500;
 }
 
-.text-style-semibold-weight {
+.text-style-weight-semibold {
     font-weight: 600;
 }
 
-.text-style-bold-weight {
+.text-style-weight-bold {
     font-weight: 700;
 }
 
@@ -130,12 +320,17 @@
     font-size: 12px;
 }
 
+/* ITALIC */
+.text-style-italic {
+    font-style: italic;
+}
+
 /* DISPLAY  */
 .text-style-display {
     font-family: IBM Plex Sans;
     font-style: normal;
     line-height: normal;
-    letter-spacing: -4.48px;
+    letter-spacing: -0.04em;
 }
 
 /* HEADLINE */
@@ -143,7 +338,7 @@
     font-family: IBM Plex Sans;
     font-style: normal;
     line-height: normal;
-    letter-spacing: -1.92px;
+    letter-spacing: -0.04em;
 }
 
 /* TITLE */
@@ -151,7 +346,7 @@
     font-family: IBM Plex Sans;
     font-style: normal;
     line-height: normal;
-    letter-spacing: -0.88px;
+    letter-spacing: -0.04em;
 }
 
 /* BODY */
@@ -159,5 +354,12 @@
     font-family: Zilla Slab;
     font-style: normal;
     line-height: 120%;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.02em;
+}
+
+.text-style-label {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.04em;
 }

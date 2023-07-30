@@ -1,0 +1,15 @@
+.illustration {
+    display: inline-block;
+}
+
+.flex-container-row {
+    display: flex;
+}
+
+.flex-expand {
+    flex-grow: 1;
+}
+
+.no-margin {
+    margin: 0;
+}
