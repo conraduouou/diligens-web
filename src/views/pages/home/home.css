@@ -74,6 +74,7 @@
 /*** ROOM ***/
 .room-section {
     padding: 109px 0;
+    margin-bottom: 160px;
     background-color: #1F821A;
 }
 
@@ -95,4 +96,10 @@
 
 .secondary-button:hover {
     background-color: #E0E0E0;
+}
+
+/*** CONTACT US ***/
+.contact-section-home {
+    padding: 0 200px;
+    margin-bottom: 96px;
 }

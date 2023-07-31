@@ -1,0 +1,35 @@
+.reach-section {
+    padding: 60px 94px 0px;
+    margin-bottom: 64px;
+}
+
+.reach-section-header {
+    margin: 0 0 20px 0;
+}
+
+.reach-section-account {
+    margin-bottom: 20px;
+}
+
+.reach-section-account:nth-child(3) {
+    margin-bottom: 64px;
+}
+
+.reach-section-account>span {
+    margin: auto 0 auto 24px;
+}
+
+#facebook-icon {
+    filter: brightness(0) saturate(100%) invert(35%) sepia(83%) saturate(759%) hue-rotate(77deg) brightness(91%) contrast(88%);
+    height: 35px;
+    width: 35px;
+}
+
+#location-icon {
+    width: 35px;
+}
+
+.reach-section-contact {
+    padding: 0 200px;
+    margin-bottom: 96px;
+}

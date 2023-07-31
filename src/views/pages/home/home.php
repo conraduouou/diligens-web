@@ -105,11 +105,13 @@
             Go to Rooms
         </button>
     </div>
+    <div class="contact-section-home">
+        <?php
+        include COMPONENTS_PATH . '/contact_section/contact_section.php';
+        ?>
+    </div>
     <?php
-    include COMPONENTS_PATH . '/contact_section/contact_section.php';
-    ?>
-    <?php
-    echo(include COMPONENTS_PATH . '/footer/footer.php');
+    echo (include COMPONENTS_PATH . '/footer/footer.php');
     ?>
 </body>
 
