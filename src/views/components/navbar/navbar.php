@@ -16,7 +16,7 @@
                 </a>
                 <div class="rightSection">
                     <a class="links" href="#">Services</a>
-                    <a class="links" href="#">Rooms</a>
+                    <a class="links" href="/diligens_web/index.php/rooms">Rooms</a>
                     <a class="links" href="#">Stories</a>
                     <a class="links" href="/diligens_web/index.php/about-us">About Us</a>
                     <a class="links" href="/diligens_web/index.php/contact-us">Contact Us</a>
