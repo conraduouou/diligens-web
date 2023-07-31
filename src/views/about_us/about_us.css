@@ -1,0 +1,36 @@
+.info-section {
+    padding: 60px 180px 132px 120px;
+}
+
+.info-section-jump {
+    height: max-content;
+    border-right: 3px solid #1F821A;
+}
+
+.info-section-jump-links {
+    margin-right: 66px;
+    margin-bottom: 120px;
+}
+
+.info-section-jump a {
+    display: block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-bottom: 16px;
+    color: #1F821A
+}
+
+.info-section-jump a:hover {
+    color: #45CA3D;
+}
+
+.info-section-content-header {
+    margin-left: 60px;
+    margin-bottom: 36px;
+}
+
+.info-section-content-paragraph {
+    margin-left: 60px;
+    margin-bottom: 100px;
+    text-indent: 6%;
+}
