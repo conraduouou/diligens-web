@@ -8,8 +8,11 @@
 <header class="sticky">
     <div class="navbar" id="myNavbar">
         <nav>
-            <img class="diligens-logo" src="<?php echo PROJECT_ROOT_PATH . '/assets/logo.svg' ?>" alt="Logo" style="height: 80px;">
-            <div class="diligens">Diligens</div>
+            <a href="/diligens_web/index.php">
+                <img class="diligens-logo" src="<?php echo PROJECT_ROOT_PATH . '/assets/logo.svg' ?>" alt="Logo"
+                    style="height: 80px;">
+                <div class="diligens">Diligens</div>
+            </a>
             <div class="rightSection">
                 <a class="links" href="#">Services</a>
                 <a class="links" href="#">Rooms</a>
