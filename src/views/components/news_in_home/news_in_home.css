@@ -17,6 +17,7 @@
     height: 4px;
     margin: auto 0;
     background-color: #359923;
+    border-radius: 15px;
 }
 
 .news-section-label-text {
