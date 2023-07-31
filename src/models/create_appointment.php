@@ -1,22 +1,8 @@
 <?php
- // Create connection
- $conn = new mysqli('localhost', 'root', '', 'diligens_web');
-
- // Check connection
- if ($conn->connect_error) {
-   die("Connection failed: " . $conn->connect_error);
-
-    // Create database
- $sql = "CREATE DATABASE diligens_web";
- if ($conn->query($sql) === TRUE) {
-
-    // Create Appoinment List Table
-    $conn->query("CREATE TABLE `diligens_web`.`appointment_list` (`id` VARCHAR(50) NULL DEFAULT NULL , `name` VARCHAR(50) NULL DEFAULT NULL , `email` VARCHAR(50) NULL DEFAULT NULL , `number` INT(50) NULL DEFAULT NULL , `company` VARCHAR(50) NULL DEFAULT NULL , `room-type` VARCHAR(50) NULL DEFAULT NULL , `date` DATE NULL DEFAULT NULL ) ENGINE = InnoDB");   //
-    echo "Database created successfully";
- } else {
-   echo "Error creating database: " . $conn->error;
- }
- }else{
+  // Check db
+  include('create_db.php');
+    // Create connection
+    $conn = new mysqli('localhost', 'root', '', 'diligens_web');
     // Check for Id
     $id;
     $query = $conn->prepare("SELECT id FROM `appointment_list` ORDER BY id DESC LIMIT 1");
@@ -46,7 +32,6 @@
       if ($query->execute()){
       }
    }
- }
  
  $conn->close()
 ?>
