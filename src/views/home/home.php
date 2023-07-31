@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/assets/style.css' ?>">
     <link rel="stylesheet" href="src/views/components/primary_button/primary_button.css">
     <link rel="stylesheet" href="src/views/home/home.css">
     <title>Diligens | Home</title>
 </head>
 
 <body>
-    <?php include COMPONENTS_PATH . '/navbar/navbar.html' ?>
+    <?php include COMPONENTS_PATH . '/navbar/navbar.php' ?>
     <div class="first-section flex-container-row">
         <img src="assets/illustration1.svg" alt="illustration 1" class="illustration">
         <div class="flex-expand"></div>
@@ -109,7 +109,7 @@
     include COMPONENTS_PATH . '/contact_section/contact_section.php';
     ?>
     <?php
-    include COMPONENTS_PATH . '/footer/footer.html';
+    echo(include COMPONENTS_PATH . '/footer/footer.html');
     ?>
 </body>
 

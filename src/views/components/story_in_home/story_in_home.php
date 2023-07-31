@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="<?php echo COMPONENTS_PATH . '/story_in_home/story_in_home.css' ?>">
+    <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/' . COMPONENTS_PATH . '/story_in_home/story_in_home.css' ?>">
 </head>
 
 <body>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="<?php echo COMPONENTS_PATH . '/news_in_home/news_in_home.css' ?>">
+    <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/' . COMPONENTS_PATH . '/news_in_home/news_in_home.css' ?>">
 </head>
 
 <body>
