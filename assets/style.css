@@ -524,7 +524,6 @@
 /* DISPLAY  */
 .text-style-display {
     font-family: IBM Plex Sans;
-    font-style: normal;
     line-height: normal;
     letter-spacing: -0.04em;
 }
@@ -532,7 +531,6 @@
 /* HEADLINE */
 .text-style-headline {
     font-family: IBM Plex Sans;
-    font-style: normal;
     line-height: normal;
     letter-spacing: -0.04em;
 }
@@ -540,7 +538,6 @@
 /* TITLE */
 .text-style-title {
     font-family: IBM Plex Sans;
-    font-style: normal;
     line-height: normal;
     letter-spacing: -0.04em;
 }
@@ -548,14 +545,12 @@
 /* BODY */
 .text-style-body {
     font-family: Zilla Slab;
-    font-style: normal;
     line-height: 120%;
     letter-spacing: -0.02em;
 }
 
 .text-style-label {
     font-family: IBM Plex Sans;
-    font-style: normal;
     line-height: normal;
     letter-spacing: -0.04em;
 }

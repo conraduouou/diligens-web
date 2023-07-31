@@ -1,0 +1,77 @@
+.story-section {
+    padding: 100px 0 240px 0;
+}
+
+.story-section-left {
+    flex: 5;
+    /* padding-right: 46px; */
+    align-items: end;
+}
+
+.story-section-image-block {
+    position: relative;
+    width: 852px;
+    height: 569px;
+    border-radius: 40px;
+    background-image: linear-gradient(180deg, rgba(31, 130, 26, 0.00) 0%, rgba(31, 130, 26, 0.04) 32.82%, rgba(31, 130, 26, 0.83) 100%), url('/diligens_web/assets/story-image1.jpg');
+    background-blend-mode: multiply;
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.17), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 120px;
+}
+
+.story-section-image-text {
+    position: absolute;
+    text-align: right;
+    width: 57%;
+    right: 36px;
+    bottom: 72px; 
+}
+
+.story-section-image-company {
+    padding: 14px 40px;
+    position: absolute;
+    border-radius: 40px;
+    bottom: -40px;
+    right: 68px;
+}
+
+.story-section-image-company-text {
+    font-size: 45px;
+}
+
+.story-section-caption {
+    text-align: right;
+    width: 80%;
+}
+
+.story-section-right {
+    flex: 3;
+    margin: 40px 100px 0 72px;
+}
+
+.story-section-quote {
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.story-section-person {
+    margin-bottom: 132px;
+}
+
+.story-section-person-image {
+    height: 70px;
+    width: 70px;
+    margin-right: 24px;
+}
+
+.story-section-service-provided {
+    display: inline-block;
+    margin-bottom: 36px;
+}
+
+.story-section-services {
+    font-family: IBM Plex Sans;
+    display: block;
+    letter-spacing: 0.1em;
+}
