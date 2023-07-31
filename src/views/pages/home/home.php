@@ -85,7 +85,7 @@
         </h2>
         <div class="news-section-article-container flex-container-row">
             <?php
-            for ($x = 0; $x < 3; $x++) {
+            for ($newsId = 1; $newsId <= 3; $newsId++) {
                 include COMPONENTS_PATH . '/news_in_home/news_in_home.php';
             }
             ?>

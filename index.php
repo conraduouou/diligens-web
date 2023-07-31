@@ -4,6 +4,7 @@ require __DIR__ . "/inc/config.php";
 $uri = $_SERVER['REQUEST_URI'];
 
 $requestPath = strtok($uri, '?');
+$tokens = explode('/', $requestPath);
 
 $routes = [
     BASE_URL_PATH => VIEWS_PATH . '/home/home.php',
@@ -11,7 +12,13 @@ $routes = [
     BASE_URL_PATH . '/contact-us' => VIEWS_PATH . '/contact_us/contact_us.php',
 ];
 
-if (array_key_exists($requestPath, $routes)) {
+if ($tokens[3] == 'news') {
+    if (isset($tokens[4])) {
+        include VIEWS_PATH . '/news/news_' . $tokens[4] . '.php';
+    } else {
+        echo 404;
+    }
+} else if (array_key_exists($requestPath, $routes)) {
     include $routes[$requestPath];
 } else {
     echo 404;
