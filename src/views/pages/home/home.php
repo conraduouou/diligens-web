@@ -87,7 +87,22 @@
         </h2>
         <div class="news-section-article-container flex-container-row">
             <?php
+            $newsHeadlineArray = array(
+                'Diligens Consultants, Inc. Recognized as a Leading Business Consulting Firm',
+                'Diligens Celebrates Milestones Under the Leadership of CEO April',
+                'Diligens Launches Groundbreaking Digital Transformation Services',
+            );
+
+            $newsPreviewArray = array(
+                'Recently, the firm was recognized by Industry Award Organization as the "Best Business Consulting Firm of the Year."',
+                'April\'s strategic vision and commitment to excellence have propelled Diligens to new heights in the dynamic world of business consulting.',
+                'This innovative suite of services is designed to help businesses embrace digital technologies and stay ahead in the rapidly evolving market landscape.',
+            );
             for ($newsId = 1; $newsId <= 3; $newsId++) {
+
+                $newsHeadline = $newsHeadlineArray[$newsId - 1];
+                $newsPreview = $newsPreviewArray[$newsId - 1];
+
                 include COMPONENTS_PATH . '/news_in_home/news_in_home.php';
             }
             ?>
