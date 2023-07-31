@@ -17,7 +17,7 @@
             Reach out to us today and let's start building a bright future together—<br>
             your success is our top priority!
         </p>
-        <form class="contact-section-form flex-container-row">
+        <form class="contact-section-form flex-container-row"  method="post" action="/diligens-web/src/models/create_message.php">
             <div class="contact-section-form-details">
                 <label for="name" class="textfield-label text-style-label">Name</label>
                 <input type="text" name="name" id="name" class="textfield text-style-label"
