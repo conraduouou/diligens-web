@@ -9,11 +9,11 @@
 <body>
     <div class="contact-section flex-container-col">
         <h2
-            class="contact-section-header text-style-display text-style-align-center text-style-weight-semibold text-style-size-48 color-green-700 margin-none">
+            class="contact-section-header text-style-display text-style-align-center text-style-weight-semibold text-style-size-48 color-green-700">
             We'd love to hear from you!
         </h2>
         <p
-            class="contact-section-caption text-style-title text-style-align-center text-style-weight-medium text-style-size-28 color-green-700 margin-none">
+            class="contact-section-caption text-style-title text-style-align-center text-style-weight-medium text-style-size-28 color-green-700">
             Reach out to us today and let's start building a bright future together—<br>
             your success is our top priority!
         </p>

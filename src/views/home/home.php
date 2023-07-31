@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/assets/style.css' ?>">
     <link rel="stylesheet" href="src/views/components/primary_button/primary_button.css">
-    <link rel="stylesheet" href="src/views/home/home.css">
+    <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/' . VIEWS_PATH . '/home/home.css' ?>">
     <title>Diligens | Home</title>
 </head>
 
@@ -16,7 +16,7 @@
         <img src="assets/illustration1.svg" alt="illustration 1" class="illustration">
         <div class="flex-expand"></div>
         <div class="color-green-700 margin-auto text-style-align-center">
-            <h2 class="text-style-display text-style-size-60 text-style-weight-bold margin-none">
+            <h2 class="first-section-header text-style-display text-style-size-60 text-style-weight-bold">
                 We are
                 <span class="text-style-italic">HERE</span>
                 to help!
@@ -36,7 +36,7 @@
                     Our Services</h2>
             </div>
             <p
-                class="services-section-caption margin-none text-style-label text-style-weight-medium text-style-size-28 text-style-align-justify">
+                class="services-section-caption text-style-label text-style-weight-medium text-style-size-28 text-style-align-justify">
                 We offer valuable insights to assist you in making well-informed business decisions. <br><br>
                 We don't consist of experts for nothing. Try contacting us now!
             </p>
@@ -54,11 +54,11 @@
     <div class="stories-section flex-container-col color-green-700">
         <img src="assets/divider.svg" alt="divider" class="divider">
         <h2
-            class="stories-section-header margin-none text-style-display text-style-weight-bold text-style-size-60 text-style-align-center">
+            class="stories-section-header text-style-display text-style-weight-bold text-style-size-60 text-style-align-center">
             Hear out our Stories
         </h2>
         <p
-            class="stories-section-caption margin-none text-style-display text-style-weight-medium text-style-size-28 text-style-align-center">
+            class="stories-section-caption text-style-display text-style-weight-medium text-style-size-28 text-style-align-center">
             We like stories with good endings. We'll help you get yours, too.
         </p>
         <div class="stories-section-stories flex-container-row">
@@ -93,11 +93,11 @@
     </div>
     <div class="room-section flex-container-col">
         <h2
-            class="room-section-header text-style-display text-style-align-center text-style-weight-bold text-style-size-48 color-white margin-none">
+            class="room-section-header text-style-display text-style-align-center text-style-weight-bold text-style-size-48 color-white">
             Looking for a meeting room?
         </h2>
         <p
-            class="room-section-caption text-style-title text-style-align-center text-style-weight-medium text-style-size-28 color-white margin-none">
+            class="room-section-caption text-style-title text-style-align-center text-style-weight-medium text-style-size-28 color-white">
             We got rooms available for your purposes. Tell us what you need!
         </p>
         <button type="button"

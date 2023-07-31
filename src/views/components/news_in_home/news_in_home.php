@@ -11,7 +11,7 @@
         <div class="news-section-label flex-container-row">
             <div class="news-section-label-line"></div>
             <h4
-                class="news-section-label-text text-style-label text-style-size-22 text-style-weight-medium color-black margin-none">
+                class="news-section-label-text text-style-label text-style-size-22 text-style-weight-medium color-black">
                 News</h4>
         </div>
         <h3 class="news-section-article-title text-style-title text-style-size-22 text-style-weight-medium color-black">
