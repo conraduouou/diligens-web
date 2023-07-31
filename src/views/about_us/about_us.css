@@ -1,9 +1,28 @@
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+.title-section {
+    flex: 0;
+    display: grid;
+    position:relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    overflow-y: clip;
 }
 
-body>div {
-    flex: 1;
+.title-section-header {
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 60px 94px;
+}
+
+.title-section-rectangle-container {
+    grid-area: 1 / 1 / 2 / 2;
+    display: inline-block;
+    position: absolute;
+    margin-left: 18%;
+    transform: rotate(40deg) translateY(-35%);
+}
+
+.title-section-rectangle {
+    display: inline-block;
+    margin-right: 20px;
+    width: 56px;
+    height: 500px;
 }
