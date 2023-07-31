@@ -20,6 +20,7 @@ if ($tokens[3] == 'news') {
     }
 } else if ($tokens[3] == 'stories') {
     if (isset($tokens[4])) {
+        $storyId = $tokens[4];
         include VIEWS_PATH . '/story/story_' . $tokens[4] . '.php';
     } else {
         echo 404;

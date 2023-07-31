@@ -66,8 +66,10 @@
             $storyText = "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum
                 has been the industry's standard dummy text ever since the 1500s.";
 
-            for ($storyId = 1; $storyId <= 3; $storyId++)
+            for ($x = 1; $x <= 3; $x++) {
+                $storyId = $x;
                 include COMPONENTS_PATH . '/story_in_home/story_in_home.php';
+            }
             ?>
         </div>
         <?php
