@@ -1,0 +1,49 @@
+/** FOOTER **/
+.footer {
+    padding: 72px 160px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    color: #E0E0E0
+}
+
+.footer-links {
+    margin-right: 60px;
+}
+
+.footer-small-line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: 4px 0 16px;
+}
+
+.footer-links-container a {
+    margin-bottom: 12px;
+}
+
+.footer-links-col1 {
+    padding-right: 48px;
+}
+
+.footer-links-col2 {
+    padding-right: 32px
+}
+
+.footer-reach-facebook img {
+    margin-right: 12px;
+}
+
+.footer-logo {
+    margin-left: auto;
+}
+
+.footer-logo-label {
+    margin-left: 20px;
+}
