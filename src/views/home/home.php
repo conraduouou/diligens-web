@@ -118,17 +118,22 @@
         <form class="contact-section-form flex-container-row">
             <div class="contact-section-form-details">
                 <label for="name" class="textfield-label text-style-label">Name</label>
-                <input type="text" name="name" id="name" class="textfield text-style-label" placeholder="Put your beautiful name here..." required>
+                <input type="text" name="name" id="name" class="textfield text-style-label"
+                    placeholder="Put your beautiful name here..." required>
                 <label for="email" class="textfield-label text-style-label">Email</label>
-                <input type="email" name="email" id="email" class="textfield text-style-label" placeholder="Put your great-sounding email here..." required>
+                <input type="email" name="email" id="email" class="textfield text-style-label"
+                    placeholder="Put your great-sounding email here..." required>
                 <label for="mobile" class="textfield-label text-style-label">Number</label>
-                <input type="text" name="mobile" id="mobile" class="textfield text-style-label" placeholder="Put your mobile where we can contact you here..." required>
+                <input type="text" name="mobile" id="mobile" class="textfield text-style-label"
+                    placeholder="Put your mobile where we can contact you here..." required>
                 <label for="company" class="textfield-label text-style-label">Company name</label>
-                <input type="text" name="company" id="company" class="textfield text-style-label" placeholder="Put the company name we'll make successful together..." required>
+                <input type="text" name="company" id="company" class="textfield text-style-label"
+                    placeholder="Put the company name we'll make successful together..." required>
             </div>
             <div class="contact-section-form-message">
                 <label for="message" class="textfield-label text-style-label">Message</label>
-                <textarea type="text" name="message" id="message" placeholder="Have something to say? Put it here!" class="textfield text-style-label"></textarea>
+                <textarea type="text" name="message" id="message" placeholder="Have something to say? Put it here!"
+                    class="textfield text-style-label"></textarea>
             </div>
         </form>
         <?php
@@ -138,6 +143,44 @@
         include COMPONENTS_PATH . '/primary_button/primary_button.php';
         ?>
     </div>
+    <footer class="footer flex-container-row bg-color-green-900 color-white">
+        <div class="footer-links">
+            <p class="text-style-label text-style-weight-bold text-style-size-18 margin-none">
+                Helpful Links
+            </p>
+            <div class="footer-small-line"></div>
+            <div class="footer-links-container flex-container-row text-style-label text-style-weight-medium text-style-size-18">
+                <div class="footer-links-col1 flex-container-col">
+                    <a href="#">Home</a>
+                    <a href="#">Proposal</a>
+                    <a href="#">About us</a>
+                </div>
+                <div class="footer-links-col2 flex-container-col">
+                    <a href="#">Services</a>
+                    <a href="#">Stories</a>
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-reach">
+            <p class="text-style-label text-style-weight-bold text-style-size-18 margin-none">
+                Reach us at
+            </p>
+            <div class="footer-small-line"></div>
+            <div class="footer-reach-facebook flex-container-row text-style-label text-style-weight-medium text-style-size-18">
+                <a href="#">
+                    <img src="assets/ic-facebook.svg" alt="facebook">
+                    Diligens Consultants, Inc.
+                </a>
+            </div>
+        </div>
+        <div class="footer-logo flex-container-row">
+            <img src="assets/logo-white.svg" alt="white logo">
+            <span class="footer-logo-label text-style-display text-style-weight-bold text-style-size-36 margin-vertical-auto">
+                Diligens
+            </span>
+        </div>
+    </footer>
 </body>
 
 </html>
