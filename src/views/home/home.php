@@ -109,7 +109,7 @@
     include COMPONENTS_PATH . '/contact_section/contact_section.php';
     ?>
     <?php
-    echo(include COMPONENTS_PATH . '/footer/footer.html');
+    echo(include COMPONENTS_PATH . '/footer/footer.php');
     ?>
 </body>
 

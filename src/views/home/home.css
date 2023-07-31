@@ -4,44 +4,6 @@
     }
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-body>div {
-    flex: 1;
-}
-
-.flex-container-row {
-    display: flex;
-}
-
-.flex-container-col {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-expand {
-    flex-grow: 1;
-}
-
-.margin-none {
-    margin: 0;
-}
-
-.margin-auto {
-    margin: auto;
-}
-
-.margin-vertical-auto {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-
-/** SPECIFIC CSS **/
 .illustration {
     display: inline-block;
 }

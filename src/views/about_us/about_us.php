@@ -13,6 +13,10 @@
     <?php
     include COMPONENTS_PATH . '/navbar/navbar.php';
     ?>
+    <div></div>
+    <?php
+    include COMPONENTS_PATH . '/footer/footer.php';
+    ?>
 </body>
 
 </html>
