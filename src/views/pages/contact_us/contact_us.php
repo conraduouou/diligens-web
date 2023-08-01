@@ -43,7 +43,7 @@
             </span>
         </div>
     </div>
-    <div class="reach-section-contact">
+    <div class="contact-section-contact-us">
         <?php
         include COMPONENTS_PATH . '/contact_section/contact_section.php';
         ?>

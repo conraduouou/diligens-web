@@ -35,7 +35,7 @@ function submitForm(form, action) {
         .then(responseData => responseData.text())
         .then(text => {
             const response = JSON.parse(text);
-            document.getElementById('test').innerHTML = response.message;
+            alert(response.message);
         })
         .catch(error => {
             console.error('Error: WHATS???!! ', error);

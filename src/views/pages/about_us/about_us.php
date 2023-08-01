@@ -17,15 +17,13 @@
     $title = 'About us';
     include COMPONENTS_PATH . '/title_section/title_section.php';
     ?>
-    <div class="info-section flex-container-row">
-        <div class="info-section-jump flex-container-row">
-            <div
-                class="info-section-jump-links text-style-label text-style-weight-semibold text-style-size-22 color-green-700">
-                <a href="#">Overview</a>
-                <a href="#">Mission</a>
-                <a href="#">Vision</a>
-                <a href="#">History</a>
-            </div>
+    <div class="info-section">
+        <div
+            class="info-section-jump-links text-style-label text-style-weight-semibold text-style-size-22 color-green-700">
+            <a href="#">Overview</a>
+            <a href="#">Mission</a>
+            <a href="#">Vision</a>
+            <a href="#">History</a>
         </div>
         <div class="info-section-content">
             <h2

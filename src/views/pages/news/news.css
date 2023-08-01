@@ -1,0 +1,79 @@
+@media screen and (max-width: 870px) {
+    nav .links {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.news-container {
+    padding: 70px 35% 320px 10%;
+}
+
+h1 {
+    font-family: 'IBM Plex Sans';
+    font-size: 51px;
+    color: #1F821A;
+    margin-bottom: 20px;
+}
+
+.oval-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 65px;
+}
+
+.oval {
+    font-family: 'IBM Plex Sans';
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: none;
+    background-color: #80AC46;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 17px;
+}
+
+.oval:first-child {
+    background-image: linear-gradient(to right, #1C610F, #80AC46);
+}
+
+.oval:not(:first-child) {
+    background-color: transparent;
+    border: 2px solid #80AC46;
+    border-width: 3px;
+    color: #80AC46;
+}
+
+.oval img {
+    width: 40px;
+    border-radius: 50%;
+    /* Make the image circular */
+    margin-right: 10px;
+}
+
+.oval-1-content {
+    display: flex;
+    align-items: center;
+}
+
+.oval-1-content img {
+    display: block;
+    height: 28;
+    width: 28;
+}
+
+.oval-1-content span {
+    display: block;
+}
+
+.news-description {
+    font-family: 'IBM Plex Sans';
+    font-size: 22px;
+    color: #1C610F;
+    line-height: 1.6;
+    text-align: left;
+    /* Align description text to the left */
+}

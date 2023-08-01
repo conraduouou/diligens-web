@@ -49,7 +49,7 @@
         </form>
     </div>
 
-    <script src="<?php echo PROJECT_ROOT_PATH . '/' . CONTROLLERS_PATH . '/components/contact_section.js' ?>"></script>
+    <script src="<?php echo PROJECT_ROOT_PATH . '/' . CONTROLLERS_PATH . '/components/contact_section/contact_section.js' ?>"></script>
 </body>
 
 </html>

@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=IBM Plex Sans|Zilla Slab");
+
+@media screen and (max-width: 870px) {
+    nav .links {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* ----------------------------- Side Bar -----------------------------  */
+
+.body-container {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 60px 180px 0 120px;
+    margin-bottom: 40px;
+}
+
+.info-section-jump-links {
+    padding-right: 66px;
+    padding-bottom: 120px;
+    border-right: 3px solid #1F821A;
+    height: min-content;
+}
+
+.info-section-jump-links a {
+    display: block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-bottom: 16px;
+    color: #1F821A
+}
+
+.info-section-jump-links a:hover {
+    color: #45CA3D;
+}
+
+/* ----------------------------- Services -----------------------------  */
+.service-container {
+    display: flex;
+    margin-left: 60px;
+    margin-bottom: 120px;
+}
+
+.service-container:nth-child(3) {
+    margin-bottom: 0;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10%;
+}
+
+.left-side-title {
+    font-family: 'IBM Plex Sans';
+    font-weight: bold;
+    font-size: 48px;
+    color: #1F821A;
+    margin-bottom: 44px;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side-text {
+    font-family: 'Zilla Slab';
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.6;
+    color: #1F821A;
+    margin-bottom: 54px;
+}
+
+/* ----------------------------- Meeting Room -----------------------------  */
+.meeting-room-container {
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'IBM Plex Sans';
+    justify-content: center;
+    align-items: center;
+    padding: 108px 0;
+}
+
+.meeting-room-container div:nth-child(2) {
+    margin-top: 16px;
+    margin-bottom: 60px;
+}
