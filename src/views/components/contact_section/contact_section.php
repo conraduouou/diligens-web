@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/assets/style.css' ?>">
     <link rel="stylesheet"
         href="<?php echo PROJECT_ROOT_PATH . '/' . COMPONENTS_PATH . '/contact_section/contact_section.css' ?>">
+    <link rel="stylesheet"
+        href="<?php echo PROJECT_ROOT_PATH . '/' . COMPONENTS_PATH . '/primary_button/primary_button.css' ?>">
 </head>
 
 <body>
@@ -18,7 +20,8 @@
             Reach out to us today and let's start building a bright future together—<br>
             your success is our top priority!
         </p>
-        <form class="contact-section-form flex-container-col" method="post" action="/diligens-web/src/models/create_message.php">
+        <form class="contact-section-form flex-container-col" method="post"
+            action="/diligens-web/src/models/create_message.php">
             <div class="flex-container-row">
                 <div class="contact-section-form-details">
                     <label for="name" class="textfield-label text-style-label">Name</label>
@@ -40,11 +43,11 @@
                         class="textfield text-style-label"></textarea>
                 </div>
             </div>
-            <?php
-            $buttonText = 'Send';
-            $padding = 132;
-            include COMPONENTS_PATH . '/primary_button/primary_button.php';
-            ?>
+            <button class="primary-button color-white" type="submit">
+                <span class="text-style-label text-style-weight-bold text-style-size-28">
+                    Send
+                </span>
+            </button>
         </form>
     </div>
 
