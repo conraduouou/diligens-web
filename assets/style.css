@@ -571,10 +571,6 @@ body {
     margin: 0;
 }
 
-body>div {
-    flex: 1;
-}
-
 .flex-container-row {
     display: flex;
 }

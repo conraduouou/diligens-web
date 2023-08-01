@@ -16,17 +16,16 @@ $routes = [
     BASE_URL_PATH . '/admin' => VIEWS_PATH . '/admin/admin.php',
 ];
 
-if ($tokens[3] == 'news') {
-    if (isset($tokens[4])) {
-        include VIEWS_PATH . '/news/news_' . $tokens[4] . '.php';
-    } else {
-        echo 404;
-    }
-} else if ($tokens[3] == 'stories' && isset($tokens[4])) {
+if ($tokens[3] == 'news' && isset($tokens[4])) {
+    // in a large-scale website or dynamic website, this is where the id ($token[4]) would be
+    // searched for in the database
+    include VIEWS_PATH . '/news/news_' . $tokens[4] . '.php';
+} else if ($tokens[3] == 'stories' && isset($tokens[4]) && $tokens[4] && $tokens[4] <= 3) {
     $storyId = $tokens[4];
     include VIEWS_PATH . '/story/story_' . $tokens[4] . '.php';
-} else if ($tokens[3] == 'services' && isset($tokens[4])) {
-
+} else if ($tokens[3] == 'services' && isset($tokens[4]) && $tokens[4] && $tokens[4] <= 3) {
+    $serviceId = $tokens[4];
+    include VIEWS_PATH . '/service/service.php';
 } else if (array_key_exists($requestPath, $routes)) {
     include $routes[$requestPath];
 } else {

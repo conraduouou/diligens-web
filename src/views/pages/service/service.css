@@ -1,0 +1,70 @@
+.service-title {
+    position: relative;
+    overflow-y: clip;
+    justify-content: space-between;
+    padding: 120px 100px 200px 100px;
+}
+
+.service-title img {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 4%;
+    object-fit: cover;
+    min-height: 100%;
+    width: 100%;
+}
+
+.service-title-text-container {
+    z-index: 1;
+}
+
+.service-title-line {
+    height: 4px;
+    width: 114px;
+    margin-top: 44px;
+}
+
+.service-title-description {
+    z-index: 1;
+    width: 30%;
+}
+
+.service-content {
+    padding: 80px 100px;
+    gap: 64px;
+}
+
+.service-content-left {
+    flex: 2;
+    align-items: center;
+}
+
+.service-content-left img {
+    width: 30vh;
+}
+
+.service-content-left p:nth-child(2) {
+    margin-top: 56px;
+    margin-bottom: 100px;
+}
+
+.service-content-right {
+    position: relative;
+    top: -23vh;
+    flex: 5;
+}
+
+.service-content-image {
+    background-image: var(--url);
+    background-size: cover;
+    border-radius: 16px;
+    height: 40vw;
+    width: 60vw;
+    box-shadow: 3px 6px 33px rgb(0, 0, 0, .25);
+}
+
+.service-content-right-text {
+    margin-top: 100px;
+}
