@@ -13,6 +13,7 @@ $routes = [
     BASE_URL_PATH . '/rooms' => VIEWS_PATH . '/rooms/rooms.php',
     BASE_URL_PATH . '/stories' => VIEWS_PATH . '/stories/stories.php',
     BASE_URL_PATH . '/services' => VIEWS_PATH . '/services/services.php',
+    BASE_URL_PATH . '/admin' => VIEWS_PATH . '/admin/admin.php',
 ];
 
 if ($tokens[3] == 'news') {
