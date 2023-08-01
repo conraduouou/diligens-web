@@ -5,6 +5,8 @@
 }
 
 .info-section-jump-links {
+    position: sticky;
+    top: 240px;
     padding-right: 66px;
     padding-bottom: 120px;
     border-right: 3px solid #1F821A;
@@ -24,6 +26,7 @@
 }
 
 .info-section-content-header {
+    margin-top: 0;
     margin-left: 60px;
     margin-bottom: 36px;
 }
