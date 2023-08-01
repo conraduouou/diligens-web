@@ -65,10 +65,14 @@
         </p>
         <div class="stories-section-stories flex-container-row">
             <?php
-            $storyText = "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum
-                has been the industry's standard dummy text ever since the 1500s.";
+            $text = array(
+                '“Their approach was refreshingly collaborative, taking the time to understand our unique challenges and opportunities.”',
+                '“When we realized the need to transform our business operations and elevate our performance”',
+                '“Their keen analytical skills and industry expertise revealed invaluable opportunities for improvement and growth.”'
+            );
 
             for ($x = 1; $x <= 3; $x++) {
+                $storyText = $text[$x - 1];
                 $storyId = $x;
                 include COMPONENTS_PATH . '/story_in_home/story_in_home.php';
             }
