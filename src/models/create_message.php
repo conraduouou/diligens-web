@@ -33,10 +33,11 @@ try {
 } catch (Exception $e) {
   // echo $e->getMessage();
   header('Content-Type: application/json');
+
   echo json_encode(
     array(
       'statusCode' => 500,
-      'message' => 'There was an error on our end. Please try again later.'
+      'message' => $e->getMessage() != "" ? 'There was an error on our end. Please try again later.' : $e->getMessage()
     )
   );
 } finally {
