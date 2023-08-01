@@ -28,7 +28,14 @@ try {
       );
     }
   } else {
-    throw new Exception('Incomplete values were supplied');
+    header('Content-Type: application/json');
+
+    echo json_encode(
+      array(
+        'statusCode' => 400,
+        'message' => 'The fields were not all supplied.'
+      )
+    );
   }
 } catch (Exception $e) {
   // echo $e->getMessage();
