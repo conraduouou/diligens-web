@@ -556,6 +556,10 @@
 }
 
 /*** COMMON ***/
+* {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
 }
@@ -564,6 +568,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0;
 }
 
 body>div {
