@@ -17,8 +17,9 @@ $routes = [
 ];
 
 if ($tokens[3] == 'news' && isset($tokens[4])) {
-    // in a large-scale website or dynamic website, this is where the id ($token[4]) would be
-    // searched for in the database
+    // in a large-scale/dynamic website, I think the id ($token[4]) should be passed to the
+    // javascript controller of the specific news page, and then fetch the news data from
+    // there using a dedicated php model file. This is only a routing file after all.
     include VIEWS_PATH . '/news/news_' . $tokens[4] . '.php';
 } else if ($tokens[3] == 'stories' && isset($tokens[4]) && $tokens[4] && $tokens[4] <= 3) {
     $storyId = $tokens[4];
