@@ -58,6 +58,7 @@
 
 .service-content-image {
     background-image: var(--url);
+    background-position-y: center;
     background-size: cover;
     border-radius: 16px;
     height: 40vw;

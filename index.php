@@ -25,6 +25,7 @@ if ($tokens[3] == 'news' && isset($tokens[4])) {
     include VIEWS_PATH . '/story/story_' . $tokens[4] . '.php';
 } else if ($tokens[3] == 'services' && isset($tokens[4]) && $tokens[4] && $tokens[4] <= 3) {
     $serviceId = $tokens[4];
+    setcookie("ServiceId", $serviceId);
     include VIEWS_PATH . '/service/service.php';
 } else if (array_key_exists($requestPath, $routes)) {
     include $routes[$requestPath];
