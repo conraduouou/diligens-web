@@ -25,6 +25,8 @@ if ($tokens[3] == 'news') {
 } else if ($tokens[3] == 'stories' && isset($tokens[4])) {
     $storyId = $tokens[4];
     include VIEWS_PATH . '/story/story_' . $tokens[4] . '.php';
+} else if ($tokens[3] == 'services' && isset($tokens[4])) {
+
 } else if (array_key_exists($requestPath, $routes)) {
     include $routes[$requestPath];
 } else {
