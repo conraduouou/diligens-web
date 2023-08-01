@@ -33,20 +33,18 @@
             <!--- Assurance --->
             <div class="service-container">
                 <div class="left-side">
-                    <div class="left-side-title">Assurance</div>
+                    <div class="left-side-title">Professional Advice</div>
                     <img src="<?php echo PROJECT_ROOT_PATH . '/assets/services1.svg' ?>" alt="Image 1">
                 </div>
 
                 <div class="right-side">
                     <p class="right-side-text">
-                        <span style="margin-left: 55px;"></span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam erat sapien, semper sodales
-                        consequat a,
-                        consectetur vitae ex. Integer nec sodales orci. Pellentesque posuere nisi non lobortis
-                        elementum.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam erat sapien, semper sodales
-                        consequat a,
-                        consectetur vitae ex.
+                        <strong>Empower Your Decisions with Expert Guidance</strong>
+                        <br>
+                        <br>
+                        Your trusted source for reliable and informed counsel. Our team of seasoned experts is committed
+                        to providing you with valuable insights and recommendations to tackle your business challenges
+                        head-on.
                     </p>
                     <?php
                     $buttonText = 'Know more';
@@ -66,14 +64,12 @@
 
                 <div class="right-side">
                     <p class="right-side-text">
-                        <span style="margin-left: 55px;"></span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam erat sapien, semper sodales
-                        consequat a,
-                        consectetur vitae ex. Integer nec sodales orci. Pellentesque posuere nisi non lobortis
-                        elementum.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam erat sapien, semper sodales
-                        consequat a,
-                        consectetur vitae ex.
+                        <strong>Navigating Tax Matters Made Effortless</strong>
+                        <br>
+                        <br>
+                        Your partner in simplifying the complexities of taxation. Our dedicated team of tax experts is
+                        here to provide you with comprehensive guidance and strategic solutions to optimize your tax
+                        planning and compliance.
                     </p>
                     <?php
                     $buttonText = 'Know more';
@@ -94,14 +90,13 @@
 
                 <div class="right-side">
                     <p class="right-side-text">
-                        <span style="margin-left: 55px;"></span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam erat sapien, semper sodales
-                        consequat a,
-                        consectetur vitae ex. Integer nec sodales orci. Pellentesque posuere nisi non lobortis
-                        elementum.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam erat sapien, semper sodales
-                        consequat a,
-                        consectetur vitae ex.
+                        <strong>Unlock the Potential of Your Business with Expert Consulting</strong>
+                        <br>
+                        <br>
+                        We take pride in our dynamic team of experienced consultants who are driven to propel your
+                        organization to new heights of success. Whether you're looking to streamline operations, expand
+                        market reach, or foster innovation, we've got the strategic expertise to guide you every step of
+                        the way.
                     </p>
                     <?php
                     $buttonText = 'Know more';

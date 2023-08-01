@@ -74,6 +74,7 @@
 .right-side-text {
     font-family: 'Zilla Slab';
     font-size: 20px;
+    letter-spacing: -0.02em;
     text-align: justify;
     line-height: 1.6;
     color: #1F821A;
