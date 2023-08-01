@@ -20,8 +20,7 @@
             Reach out to us today and let's start building a bright future together—<br>
             your success is our top priority!
         </p>
-        <form class="contact-section-form flex-container-col" method="post"
-            action="/diligens-web/src/models/create_message.php">
+        <form class="contact-section-form flex-container-col" id="contact-form" method="POST">
             <div class="flex-container-row">
                 <div class="contact-section-form-details">
                     <label for="name" class="textfield-label text-style-label">Name</label>
@@ -43,14 +42,14 @@
                         class="textfield text-style-label"></textarea>
                 </div>
             </div>
-            <button class="primary-button color-white" type="submit">
-                <span class="text-style-label text-style-weight-bold text-style-size-28">
-                    Send
-                </span>
-            </button>
+            <input
+                class="primary-button primary-button-padding-132 color-white text-style-label text-style-weight-bold text-style-size-28 margin-auto"
+                type="submit" value="Send">
+            </input>
         </form>
     </div>
 
+    <script src="<?php echo PROJECT_ROOT_PATH . '/' . CONTROLLERS_PATH . '/components/contact_section.js' ?>"></script>
 </body>
 
 </html>

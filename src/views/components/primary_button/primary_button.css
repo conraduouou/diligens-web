@@ -10,8 +10,7 @@
 }
 
 .primary-button-padding-132 {
-    padding-left: 132px;
-    padding-right: 132px;
+    padding: 24px 132px;
 }
 
 .primary-button:hover {

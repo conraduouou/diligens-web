@@ -128,7 +128,7 @@
         ?>
     </div>
     <?php
-    echo (include COMPONENTS_PATH . '/footer/footer.php');
+    include COMPONENTS_PATH . '/footer/footer.php'
     ?>
 </body>
 
