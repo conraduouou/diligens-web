@@ -25,7 +25,29 @@
 
     <div class="service-content flex-container-row">
         <div class="service-content-left flex-container-col">
-            <img src="<?php echo PROJECT_ROOT_PATH . '/assets/story-illustration' . $serviceId . '.svg' ?>" alt="Illustration">
+            <img alt="Illustration" src="
+            <?php 
+
+            switch ($serviceId) {
+                case 3:
+                    $new = 2;
+                    break;
+                case 2:
+                    $new = 3;
+                    break;
+                case 1:
+                    $new = 1;
+                    break;
+            }
+
+            echo PROJECT_ROOT_PATH . '/assets/story-illustration' . $new . '.svg' 
+            ?>
+            " 
+            <?php 
+            if ($new == 2) {
+                echo 'style= "transform: rotate(36deg)"';
+            }
+            ?>>
             <p id="service-caption" class="text-style-label text-style-size-24 color-green-900"></p>
             <p id="service-beneficiaries" class="text-style-label text-style-size-24 color-green-900"></p>
         </div>

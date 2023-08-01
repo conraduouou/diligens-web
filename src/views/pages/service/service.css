@@ -42,7 +42,8 @@
 }
 
 .service-content-left img {
-    width: 30vh;
+    height: 24vh;
+    max-width: 80%;
 }
 
 .service-content-left p:nth-child(2) {
