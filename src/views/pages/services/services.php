@@ -47,6 +47,7 @@
                         head-on.
                     </p>
                     <?php
+                    $buttonLink = BASE_URL_PATH . '/services/1';
                     $buttonText = 'Know more';
                     $padding = 64;
                     include COMPONENTS_PATH . '/primary_button/primary_button.php';
@@ -72,6 +73,7 @@
                         planning and compliance.
                     </p>
                     <?php
+                    $buttonLink = BASE_URL_PATH . '/services/2';
                     $buttonText = 'Know more';
                     $padding = 64;
                     include COMPONENTS_PATH . '/primary_button/primary_button.php';
@@ -99,6 +101,7 @@
                         the way.
                     </p>
                     <?php
+                    $buttonLink = BASE_URL_PATH . '/services/3';
                     $buttonText = 'Know more';
                     $padding = 64;
                     include COMPONENTS_PATH . '/primary_button/primary_button.php';

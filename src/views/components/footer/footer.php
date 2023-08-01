@@ -16,14 +16,14 @@
             <div
                 class="footer-links-container flex-container-row text-style-label text-style-weight-medium text-style-size-18">
                 <div class="footer-links-col1 flex-container-col">
-                    <a href="#">Home</a>
-                    <a href="#">Rooms</a>
-                    <a href="#">About us</a>
+                    <a href="/diligens_web/index.php">Home</a>
+                    <a href="/diligens_web/index.php/rooms">Rooms</a>
+                    <a href="/diligens_web/index.php/about-us">About us</a>
                 </div>
                 <div class="footer-links-col2 flex-container-col">
-                    <a href="#">Services</a>
-                    <a href="#">Stories</a>
-                    <a href="#">Contact us</a>
+                    <a href="/diligens_web/index.php/services">Services</a>
+                    <a href="/diligens_web/index.php/stories">Stories</a>
+                    <a href="/diligens_web/index.php/contact-us">Contact us</a>
                 </div>
             </div>
         </div>

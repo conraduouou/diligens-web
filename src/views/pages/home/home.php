@@ -42,6 +42,8 @@
             </p>
 
             <?php
+            $buttonLink = BASE_URL_PATH . '/services';
+            $padding = 40;
             $buttonText = 'Check out our Services';
             include COMPONENTS_PATH . '/primary_button/primary_button.php';
             ?>
@@ -73,6 +75,7 @@
             ?>
         </div>
         <?php
+        $buttonLink = BASE_URL_PATH . '/stories';
         $buttonText = 'Look at more Stories';
         $center = true;
         $padding = 132;

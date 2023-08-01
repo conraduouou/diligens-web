@@ -7,19 +7,17 @@
 </head>
 
 <body>
-    <button class="primary-button color-white
-    <?php
-    if ($center)
+    <a href="<?php echo $buttonLink; ?>" class="primary-button color-white 
+    <?php if ($center)
         echo 'margin-auto';
-    ?>
-    " <?php
-    if ($padding)
-        echo 'style="padding-left: ' . $padding . 'px; padding-right: ' . $padding . 'px"';
-    ?>>
-    <span class="text-style-label text-style-weight-bold text-style-size-28">
+    ?> " <?php
+     if ($padding)
+         echo 'style="--padding: ' . $padding . 'px"';
+     ?>>
+   <span class="text-style-label text-style-weight-bold text-style-size-28">
             <?php echo $buttonText ?>
         </span>
-    </button>
+    </a>
 </body>
 
 </html>
