@@ -1,0 +1,24 @@
+.textfield-label {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #454545;
+    margin-bottom: 5px;
+}
+
+.textfield {
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    padding: 14px 20px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    border: 1.5px solid #ADADAD;
+}
+
+
+.textfield::placeholder {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ADADAD;
+}
