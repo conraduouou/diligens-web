@@ -7,6 +7,8 @@
         href="<?php echo PROJECT_ROOT_PATH . '/' . COMPONENTS_PATH . '/contact_section/contact_section.css' ?>">
     <link rel="stylesheet"
         href="<?php echo PROJECT_ROOT_PATH . '/' . COMPONENTS_PATH . '/primary_button/primary_button.css' ?>">
+    <link rel="stylesheet"
+        href="<?php echo PROJECT_ROOT_PATH . '/' . COMPONENTS_PATH . '/textfield/textfield.css' ?>">
 </head>
 
 <body>
