@@ -23,15 +23,15 @@
         <!--- Side Bar --->
         <div
             class="info-section-jump-links text-style-label text-style-weight-semibold text-style-size-22 color-green-700">
-            <a href="#">Assurance</a>
-            <a href="#">Tax Advisory</a>
-            <a href="#">Consulting</a>
-            <a href="#">Rooms</a>
+            <a href="#advice">Professional Advice</a>
+            <a href="#tax">Tax Advisory</a>
+            <a href="#consulting">Consulting</a>
+            <a href="#room">Rooms</a>
         </div>
 
         <div class="body-container-content">
             <!--- Assurance --->
-            <div class="service-container">
+            <div id="advice" class="service-container">
                 <div class="left-side">
                     <div class="left-side-title">Professional Advice</div>
                     <img src="<?php echo PROJECT_ROOT_PATH . '/assets/services1.svg' ?>" alt="Image 1">
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <!--- Tax Advisory --->
-            <div class="service-container">
+            <div id="tax" class="service-container">
                 <div class="left-side">
                     <div class="left-side-title">Tax Advisory</div>
                     <div class="image-container">
@@ -82,7 +82,7 @@
             </div>
 
             <!--- Consulting --->
-            <div class="service-container">
+            <div id="consulting" class="service-container">
                 <div class="left-side">
                     <div class="left-side-title">Consulting</div>
                     <div class="image-container">
@@ -113,7 +113,7 @@
 
     </div>
     <!--- Looking for meeting rooms + button --->
-    <div class="meeting-room-container">
+    <div id="room" class="meeting-room-container">
         <div class="text-style-headline text-style-weight-bold text-style-size-48 color-green-700">
             Looking for a meeting room?
         </div>
@@ -121,6 +121,7 @@
             We got rooms available for your purposes. Tell us what you need!
         </div>
         <?php
+        $buttonLink = BASE_URL_PATH . '/rooms';
         $buttonText = 'Go to Rooms';
         $padding = 132;
         include COMPONENTS_PATH . '/primary_button/primary_button.php';

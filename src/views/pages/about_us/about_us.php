@@ -20,14 +20,14 @@
     <div class="info-section">
         <div
             class="info-section-jump-links text-style-label text-style-weight-semibold text-style-size-22 color-green-700">
-            <a href="#">Overview</a>
-            <a href="#">Mission</a>
-            <a href="#">Vision</a>
-            <a href="#">History</a>
+            <a href="#overview">Overview</a>
+            <a href="#mission">Mission</a>
+            <a href="#vision">Vision</a>
+            <a href="#history">History</a>
         </div>
         <div class="info-section-content">
             <h2
-                class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-48 color-green-700">
+                id="overview" class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-48 color-green-700">
                 Overview
             </h2>
             <p
@@ -39,7 +39,7 @@
                 partner for businesses across various sectors.
             </p>
             <h2
-                class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-48 color-green-700">
+                id="mission" class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-48 color-green-700">
                 Mission
             </h2>
             <p
@@ -51,7 +51,7 @@
                 industries.
             </p>
             <h2
-                class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-48 color-green-700">
+                id="vision" class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-48 color-green-700">
                 Vision
             </h2>
             <p
@@ -62,7 +62,7 @@
                 heights of success.
             </p>
             <h2
-                class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-48 color-green-700">
+                id="history" class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-48 color-green-700">
                 History
             </h2>
             <p

@@ -124,10 +124,10 @@
             class="room-section-caption text-style-title text-style-align-center text-style-weight-medium text-style-size-28 color-white">
             We got rooms available for your purposes. Tell us what you need!
         </p>
-        <button type="button"
+        <a type="button" href="<?php echo BASE_URL_PATH . '/rooms' ?>"
             class="secondary-button margin-auto text-style-label text-style-weight-bold text-style-size-28 color-green-700">
             Go to Rooms
-        </button>
+        </a>
     </div>
     <div class="contact-section-home">
         <?php
