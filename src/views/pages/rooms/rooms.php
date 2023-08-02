@@ -7,7 +7,11 @@
     <title>Diligens | Rooms</title>
 </head>
 <body>
-    <form method="post" action="/diligens-web/src/models/create_appointment.php"> 
+    <?php
+    include COMPONENTS_PATH . '/navbar/navbar.php';
+    ?>
+
+    <form method="post" action="/diligens-web/src/models/create_appointment.php" hidden=> 
     <label for="name">Name:</label>
     <input type="text" name="name" value="test"/> <br/>
     <label for="email">Email:</label>
@@ -27,5 +31,9 @@
     <input type="date" name="date" value="08-01-2023"/> <br/>
     <br/><input type="submit" value="submit"/>
     </form>
+
+    <?php
+    include COMPONENTS_PATH . '/footer/footer.php';
+    ?>
 </body>
 </html>
