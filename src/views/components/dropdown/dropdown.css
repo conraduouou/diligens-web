@@ -4,7 +4,7 @@
     margin-bottom: 24px;
 }
 
-.dropdown-button {
+#dropdown-button {
     display: flex;
     padding: 14px 20px;
     align-items: center;
@@ -14,7 +14,7 @@
     transition: border-radius 0.3s ease;
 }
 
-.dropdown-option-container {
+#dropdown-option-container {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -39,12 +39,12 @@
     background-color: #E0E0E0;
 }
 
-.dropdown:focus .dropdown-option-container {
+.dropdown:focus #dropdown-option-container {
     opacity: 100%;
     pointer-events: all;
 }
 
-.dropdown:focus .dropdown-button {
+.dropdown:focus #dropdown-button {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }

@@ -61,25 +61,9 @@
                 <label for="type" class="textfield-label text-style-label">Room type</label>
                 <div class="dropdown" tabindex="0">
                     <div id="dropdown-button"
-                        class="dropdown-button text-style-label text-style-weight-medium text-style-size-18">
-                        Press here
+                        class="text-style-label text-style-weight-medium text-style-size-18">
                     </div>
-                    <div class="dropdown-option-container">
-                        <input type="radio" name="type" id="option1">
-                        <label for="option1"
-                            class="dropdown-option text-style-label text-style-weight-medium text-style-size-18">
-                            Type 1
-                        </label>
-                        <input type="radio" name="type" id="option2">
-                        <label for="option2"
-                            class="dropdown-option text-style-label text-style-weight-medium text-style-size-18">
-                            Type 2
-                        </label>
-                        <input type="radio" name="type" id="option3">
-                        <label for="option3"
-                            class="dropdown-option text-style-label text-style-weight-medium text-style-size-18">
-                            Type 3
-                        </label>
+                    <div id="dropdown-option-container">
                     </div>
                 </div>
                 <label for="date" class="textfield-label text-style-label">Date</label>
@@ -91,27 +75,8 @@
             </form>
         </div>
     </div>
-
-    <form method="post" action="/diligens-web/src/models/create_appointment.php" hidden=>
-        <label for="name">Name:</label>
-        <input type="text" name="name" value="test" /> <br />
-        <label for="email">Email:</label>
-        <input type="email" name="email" value="test@test" /> <br />
-        <label for="number">Number:</label>
-        <input type="text" name="number" value="123" /> <br />
-        <label for="company">Company Name:</label>
-        <input type="text" name="company" value="test" /> <br />
-        <label for="room-type">Room Type:</label>
-        <select name="room-type" id="room-type">
-            <option value="r1">r1</option>
-            <option value="r2">r2</option>
-            <option value="r3">r3</option>
-            <option value="r4">r4</option>
-        </select> <br />
-        <label for="date">Date:</label>
-        <input type="date" name="date" value="08-01-2023" /> <br />
-        <br /><input type="submit" value="submit" />
-    </form>
+    
+    <script src="<?php echo PROJECT_ROOT_PATH . '/' . CONTROLLERS_PATH . '/pages/rooms/rooms.js' ?>"></script>
 
     <?php
     include COMPONENTS_PATH . '/footer/footer.php';
