@@ -2,9 +2,18 @@ h2 {
     margin: 60px 0 60px 100px;
 }
 
-.book-section {
+#book-section {
     padding: 0 8% 80px 100px;
     gap: 7%;
+    transition: opacity 0.4s ease;
+}
+
+.no-show {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
 }
 
 .book-section-left img {
