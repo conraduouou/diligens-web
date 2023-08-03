@@ -1,8 +1,6 @@
 <?php
 
 try {
-    require(__DIR__ . '/../../inc/config.php');
-    
     // Check if db exist
     $conn = new mysqli('localhost', 'root', '');
     $query = $conn->prepare("SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = '" . DB_NAME .  "'");
