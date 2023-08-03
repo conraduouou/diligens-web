@@ -21,6 +21,30 @@
     include COMPONENTS_PATH . '/title_section/title_section.php';
     ?>
 
+    <div id="modal-container" class="show-modal" tabindex="0">
+        <div id="modal" class="flex-container-col">
+            <p class="text-style-display text-style-weight-bold text-style-size-36 color-neutral-900 margin-none">
+                Submit booking
+            </p>
+            <div class="modal-line"></div>
+            <div class="modal-content">
+                <p class="text-style-display text-style-weight-bold text-style-size-28 color-neutral-900">
+                    Are you sure that the details you entered are accurate?
+                </p>
+                <p class="text-style-display text-style-weight-medium text-style-size-20 color-neutral-600">
+                    Diligens Inc. complies with Republic Act 10173 Data Privacy Act of 2012.
+                    <br>
+                    <br>
+                    You cannot undo this action once submitted.
+                </p>
+            </div>
+            <div class="modal-button-container text-style-display text-style-weight-semibold text-style-size-28 color-neutral-900 flex-container-row">
+                <button id="modal-cancel">Cancel</button>
+                <button id="modal-submit">Yes</button>
+            </div>
+        </div>
+    </div>
+
     <h2 class="text-style-display text-style-size-60 text-style-weight-bold color-green-700">
         Book a Room
     </h2>

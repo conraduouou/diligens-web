@@ -38,8 +38,6 @@ function radioBtnOnclick(index) {
 }
 
 async function submitForm(event, form) {
-    event.preventDefault();
-
     const formData = new FormData(form);
     let body = '';
 
@@ -59,7 +57,6 @@ async function submitForm(event, form) {
         });
         const response = await request.text();
         const jsonResponse = JSON.parse(response);
-        alert(jsonResponse.message);
     } catch (error) {
         console.error('Error: WHATS???!!', error);
     }
@@ -92,6 +89,26 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // add listener for when the form is submitted
     const form = document.getElementById('book-section-form');
-    form.addEventListener('submit', event => submitForm(event, form));
+    const modalContainer = document.getElementById('modal-container');
+    const modalCancel = document.getElementById('modal-cancel');
+    const modalSubmit = document.getElementById('modal-submit');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        modalContainer.classList.remove('no-show-modal')
+        modalContainer.classList.add('show-modal');
+    });
+
+    modalContainer.addEventListener('click', function() {
+        modalContainer.classList.remove('show-modal');
+        modalContainer.classList.add('no-show-modal');
+    })
+
+    modalCancel.addEventListener('click', function() {
+        modalContainer.classList.remove('show-modal');
+        modalContainer.classList.add('no-show-modal');
+    })
+
+    modalSubmit.addEventListener('click', () => submitForm(form));
 });
 
