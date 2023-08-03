@@ -37,7 +37,7 @@ function radioBtnOnclick(index) {
     roomMedia.innerHTML = title(rooms[currentRoomIndex].media);
 }
 
-async function submitForm(event) {
+async function submitForm(event, form) {
     event.preventDefault();
 
     const formData = new FormData(form);
@@ -92,6 +92,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // add listener for when the form is submitted
     const form = document.getElementById('book-section-form');
-    form.addEventListener('submit', submitForm);
+    form.addEventListener('submit', event => submitForm(event, form));
 });
 
