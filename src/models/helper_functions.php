@@ -30,7 +30,7 @@ function handleSuccess(string|null $message = null, int $code = 200)
     echo json_encode(
         array(
             'statusCode' => $code,
-            'message' => isset($message) ? 'Request successful!' : $message
+            'message' => !isset($message) ? 'Request successful!' : $message
         )
     );
 }
