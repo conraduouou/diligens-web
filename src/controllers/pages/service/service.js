@@ -123,3 +123,5 @@ serviceBenefit.innerHTML = parseBeneficiaries(serviceBeneficiaries[serviceId]);
 
 const serviceAction = document.getElementById('service-actions');
 serviceAction.innerHTML = parseActions(serviceActions[serviceId]);
+
+document.title = 'Diligens | ' + services[serviceId];
