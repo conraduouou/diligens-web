@@ -50,7 +50,7 @@ try {
         handleClientError(new Exception("The required fields were not all filled."));
     }
 } catch (Exception $e) {
-    handleServerError($e);
+    handleServerError();
 } finally {
     $conn->close();
 }

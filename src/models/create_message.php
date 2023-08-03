@@ -33,7 +33,7 @@ try {
         handleClientError(new Exception("The required fields were not all filled."));
     }
 } catch (Exception $e) {
-    handleServerError($e);
+    handleServerError();
 } catch (Throwable $e) {
     // echo $th->getMessage();
     handleServerError();
