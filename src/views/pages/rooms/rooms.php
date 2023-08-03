@@ -31,15 +31,15 @@
             <div class="book-section-room-details flex-container-col text-style-label text-style-size-28">
                 <div class="flex-container-row">
                     <span class="text-style-weight-semibold color-green-600">Rate:</span>
-                    <span id="room-cost" class="text-style-weight-bold color-green-700">1,200 php/hr</span>
+                    <span id="room-cost" class="text-style-weight-bold color-green-700"></span>
                 </div>
                 <div class="flex-container-row">
                     <span class="text-style-weight-semibold color-green-600">Capacity:</span>
-                    <span id="room-capacity" class="text-style-weight-bold color-green-700">6-8 people</span>
+                    <span id="room-capacity" class="text-style-weight-bold color-green-700"></span>
                 </div>
                 <div class="flex-container-row">
                     <span class="text-style-weight-semibold color-green-600">Projected media:</span>
-                    <span id="room-media" class="text-style-weight-bold color-green-700">Projector</span>
+                    <span id="room-media" class="text-style-weight-bold color-green-700"></span>
                 </div>
             </div>
         </div>
