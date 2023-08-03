@@ -27,7 +27,7 @@ try {
 
         $conn->query("CREATE TABLE `" . ADMIN_USER_LIST . "` (`username` VARCHAR(50) NULL DEFAULT NULL , `password` VARCHAR(50) NULL DEFAULT NULL , `type` VARCHAR(50) NULL DEFAULT NULL ) ENGINE = InnoDB");
 
-        $conn->query("CREATE TABLE `" . ROOM_LIST . "` (`id` INT(50) NULL DEFAULT NULL , `type` VARCHAR(50) NULL DEFAULT NULL , `cost` DECIMAL(50) NULL DEFAULT NULL , `media` VARCHAR(50) NULL DEFAULT NULL , `capacity` INT(50) NULL DEFAULT NULL)");
+        $conn->query("CREATE TABLE `" . ROOM_LIST . "` (`id` INT(50) NULL DEFAULT NULL AUTO_INCREMENT KEY , `type` VARCHAR(50) NULL DEFAULT NULL , `cost` DECIMAL(50) NULL DEFAULT NULL , `media` VARCHAR(50) NULL DEFAULT NULL , `capacity_min` INT(50) NULL DEFAULT NULL, `capacity_max` INT(50) NULL DEFAULT NULL)");
 
         $conn->query("INSERT INTO `" . ADMIN_USER_LIST . "` (`username`, `password`, `type`) VALUES ('admin','admin','admin')");
     }
