@@ -1,15 +1,17 @@
-const roomTypes = ['Type A', 'Type B', 'Type C', 'Type D'];
+const roomTypes = ['A', 'B', 'C', 'D'];
 let currentRoomIndex = 0;
 
 function wrapType(type, index) {
     let toReturn = `<input type="radio" name="type" id="option${index}" ${index === currentRoomIndex ? `checked`: ``}>` +
         `<label for="option${index}" class="dropdown-option text-style-label text-style-weight-medium text-style-size-18">`;
     
-    toReturn += type;
+    toReturn += 'Type ' + type;
     return toReturn;
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    // retrieve types
+
     const dropdownButton = document.getElementById('dropdown-button');
     dropdownButton.innerHTML = roomTypes[currentRoomIndex];
 

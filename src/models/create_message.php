@@ -1,9 +1,9 @@
 <?php
 
-require(__DIR__ . '/../../inc/config.php');
-require('helper_functions.php');
-
 try {
+    require(__DIR__ . '/../../inc/config.php');
+    require('helper_functions.php');
+
     // check db first
     checkDatabaseAndCreate();
 
@@ -34,6 +34,9 @@ try {
     }
 } catch (Exception $e) {
     handleServerError($e);
+} catch (Throwable $e) {
+    // echo $th->getMessage();
+    handleServerError();
 } finally {
     $conn->close();
 }

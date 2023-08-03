@@ -1,9 +1,9 @@
 <?php
 
-require(__DIR__ . '/../../inc/config.php');
-require('helper_functions.php');
-
 try {
+    require(__DIR__ . '/../../inc/config.php');
+    require('helper_functions.php');
+    
     // check db first
     checkDatabaseAndCreate();
 

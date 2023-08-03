@@ -1,9 +1,8 @@
 <?php
 
-require(__DIR__ . '/../../inc/config.php');
-require('helper_functions.php');
-
 try {
+    require(__DIR__ . '/../../inc/config.php');
+    
     // Check if db exist
     $conn = new mysqli('localhost', 'root', '');
     $query = $conn->prepare("SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = '" . DB_NAME .  "'");
@@ -32,7 +31,11 @@ try {
         $conn->query("INSERT INTO `" . ADMIN_USER_LIST . "` (`username`, `password`, `type`) VALUES ('admin','admin','admin')");
     }
 } catch (Exception $e) {
-    handleServerError($e);
+    // echo $e->getMessage();
+    throw $e;
+} catch (Throwable $e) {
+    // echo $e->getMessage();
+    throw $e;
 } finally {
     $conn->close();
 }
