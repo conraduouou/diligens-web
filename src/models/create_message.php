@@ -1,5 +1,6 @@
 <?php
 
+require(__DIR__ . '/../../inc/config.php');
 require('helper_functions.php');
 
 try {
@@ -7,7 +8,7 @@ try {
     checkDatabaseAndCreate();
 
     // Create connection
-    $conn = new mysqli('localhost', 'root', '', 'diligens_web');
+    $conn = new mysqli('localhost', 'root', '', DB_NAME);
 
     // Input message;
     if (isset($_POST['name'])) {
@@ -17,7 +18,7 @@ try {
         $company = $_POST["company"];
         $message = $_POST["message"];
 
-        $query = $conn->prepare("INSERT INTO `message_list`(`name`, `email`, `mobile`, `company`, `message`) VALUES (?, ?, ?, ?, ?)");
+        $query = $conn->prepare("INSERT INTO `" . MESSAGE_LIST . "`(`name`, `email`, `mobile`, `company`, `message`) VALUES (?, ?, ?, ?, ?)");
         $query->bind_param("sssss", $name, $email, $num, $company, $message);
 
         if ($query->execute()) {
