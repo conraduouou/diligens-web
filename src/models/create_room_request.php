@@ -32,10 +32,10 @@ try {
         $email = $_POST["email"];
         $num = $_POST["number"];
         $company = $_POST["company"];
-        $room = $_POST["room-type"];
+        $room = $_POST["room_id"];
         $date = $_POST["date"];
 
-        $query = $conn->prepare("INSERT INTO `" . ROOM_REQUEST_LIST . "`(`id`, `name`, `email`, `number`, `company`, `room-type`, `date`) VALUES (?, ?, ?, ?, ?, ?, ?)");
+        $query = $conn->prepare("INSERT INTO `" . ROOM_REQUEST_LIST . "`(`id`, `name`, `email`, `number`, `company`, `room_id`, `date`) VALUES (?, ?, ?, ?, ?, ?, ?)");
         $query->bind_param("issssis", $id, $name, $email, $num, $company, $room, $date);
 
         if ($query->execute()) {

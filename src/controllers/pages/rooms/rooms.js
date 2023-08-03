@@ -58,9 +58,32 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // add listener for when the form is submitted
     const form = document.getElementById('book-section-form');
-    form.addEventListener('submit', function (event) {
+    form.addEventListener('submit', async function (event) {
         event.preventDefault();
 
+        const formData = new FormData(form);
+        let body = '';
+
+        for (const pair of formData.entries()) {
+            if (pair[0] == 'type') {
+                body += 'room_id' + '=' + (currentRoomIndex + 1) + '&';
+            } else {
+                body += pair[0] + '=' + pair[1] + '&';
+            }
+        }
+
+        try {
+            const request = await fetch('/diligens_web/src/models/create_room_request.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: body
+            });
+            const response = await request.text();
+            const jsonResponse = JSON.parse(response);
+            alert(jsonResponse.message);
+        } catch (error) {
+            console.error('Error: WHATS???!!', error);
+        }
     });
 });
 
