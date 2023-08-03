@@ -21,6 +21,8 @@ try {
         } else {
             $id = 1;
         }
+    } else {
+        throw new Exception();
     }
 
     // Input Appointment;
@@ -33,12 +35,21 @@ try {
         $date = $_POST["date"];
 
         $query = $conn->prepare("INSERT INTO `" . ROOM_REQUEST_LIST . "`(`id`, `name`, `email`, `number`, `company`, `room-type`, `date`) VALUES (?, ?, ?, ?, ?, ?, ?)");
-        $query->bind_param("sssssss", $id, $name, $email, $num, $company, $room, $date);
+        $query->bind_param("issssis", $id, $name, $email, $num, $company, $room, $date);
+
         if ($query->execute()) {
+            handleSuccess(
+                code: 201,
+                message: 'Room request delivered! Please wait for an email by the team regarding your request.',
+            );
+        } else {
+            throw new Exception();
         }
+    } else {
+        handleClientError(new Exception("The required fields were not all filled."));
     }
 } catch (Exception $e) {
-    handleError($e);
+    handleServerError($e);
 } finally {
     $conn->close();
 }

@@ -20,7 +20,7 @@ try {
         $conn->select_db(DB_NAME);
 
         // make this into room_requests (?)
-        $conn->query("CREATE TABLE `" . ROOM_REQUEST_LIST . "` (`id` INT(50) NULL DEFAULT NULL , `name` VARCHAR(50) NULL DEFAULT NULL , `email` VARCHAR(50) NULL DEFAULT NULL , `number` INT(50) NULL DEFAULT NULL , `company` VARCHAR(50) NULL DEFAULT NULL , `room_id` VARCHAR(50) NULL DEFAULT NULL , `date` DATE NULL DEFAULT NULL ) ENGINE = InnoDB");
+        $conn->query("CREATE TABLE `" . ROOM_REQUEST_LIST . "` (`id` INT(50) NULL DEFAULT NULL , `name` VARCHAR(50) NULL DEFAULT NULL , `email` VARCHAR(50) NULL DEFAULT NULL , `number` VARCHAR(50) NULL DEFAULT NULL , `company` VARCHAR(50) NULL DEFAULT NULL , `room_id` INT(50) NULL DEFAULT NULL , `date` DATE NULL DEFAULT NULL ) ENGINE = InnoDB");
 
         $conn->query("CREATE TABLE `" . MESSAGE_LIST . "` (`name` VARCHAR(50) NULL DEFAULT NULL , `email` VARCHAR(50) NULL DEFAULT NULL , `mobile` VARCHAR(50) NULL DEFAULT NULL , `company` VARCHAR(50) NULL DEFAULT NULL , `message` VARCHAR(300) NULL DEFAULT NULL ) ENGINE = InnoDB");
 
@@ -31,7 +31,7 @@ try {
         $conn->query("INSERT INTO `" . ADMIN_USER_LIST . "` (`username`, `password`, `type`) VALUES ('admin','admin','admin')");
     }
 } catch (Exception $e) {
-    handleError($e);
+    handleServerError($e);
 } finally {
     $conn->close();
 }

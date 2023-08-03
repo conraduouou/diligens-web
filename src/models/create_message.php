@@ -22,26 +22,18 @@ try {
         $query->bind_param("sssss", $name, $email, $num, $company, $message);
 
         if ($query->execute()) {
-            header('Content-Type: application/json');
-            echo json_encode(
-                array(
-                    'statusCode' => 201,
-                    'message' => 'Message delivered! Please wait for an email by the team regarding your message.'
-                )
+            handleSuccess(
+                code: 201,
+                message: 'Message delivered! Please wait for an email by the team regarding your message.',
             );
+        } else {
+            throw new Exception();
         }
     } else {
-        header('Content-Type: application/json');
-
-        echo json_encode(
-            array(
-                'statusCode' => 400,
-                'message' => 'The fields were not all supplied.'
-            )
-        );
+        handleClientError(new Exception("The required fields were not all filled."));
     }
 } catch (Exception $e) {
-    handleError($e);
+    handleServerError($e);
 } finally {
     $conn->close();
 }
