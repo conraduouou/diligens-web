@@ -37,21 +37,19 @@ function radioBtnOnclick(index) {
     roomMedia.innerHTML = title(rooms[currentRoomIndex].media);
 }
 
-async function submitForm(event, form) {
-    event.preventDefault();
-
-    const formData = new FormData(form);
-    let body = '';
-
-    for (const pair of formData.entries()) {
-        if (pair[0] == 'type') {
-            body += 'room_id' + '=' + (currentRoomIndex + 1) + '&';
-        } else {
-            body += pair[0] + '=' + pair[1] + '&';
-        }
-    }
-
+async function submitForm(form) {
     try {
+        const formData = new FormData(form);
+        let body = '';
+
+        for (const pair of formData.entries()) {
+            if (pair[0] == 'type') {
+                body += 'room_id' + '=' + (currentRoomIndex + 1) + '&';
+            } else {
+                body += pair[0] + '=' + pair[1] + '&';
+            }
+        }
+
         const request = await fetch('/diligens_web/src/models/create_room_request.php', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -59,7 +57,13 @@ async function submitForm(event, form) {
         });
         const response = await request.text();
         const jsonResponse = JSON.parse(response);
-        alert(jsonResponse.message);
+
+        if (jsonResponse.statusCode == 201) {
+            document.cookie = 'submit=success';            
+        } else {
+            document.cookie = 'submit=failed';
+        }
+        window.location.replace('/diligens_web/index.php');
     } catch (error) {
         console.error('Error: WHATS???!!', error);
     }
@@ -92,6 +96,26 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // add listener for when the form is submitted
     const form = document.getElementById('book-section-form');
-    form.addEventListener('submit', event => submitForm(event, form));
+    const modalContainer = document.getElementById('modal-container');
+    const modalCancel = document.getElementById('modal-cancel');
+    const modalSubmit = document.getElementById('modal-submit');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        modalContainer.classList.remove('no-show-modal')
+        modalContainer.classList.add('show-modal');
+    });
+
+    modalContainer.addEventListener('click', function () {
+        modalContainer.classList.remove('show-modal');
+        modalContainer.classList.add('no-show-modal');
+    })
+
+    modalCancel.addEventListener('click', function () {
+        modalContainer.classList.remove('show-modal');
+        modalContainer.classList.add('no-show-modal');
+    })
+
+    modalSubmit.addEventListener('click', () => submitForm(form));
 });
 

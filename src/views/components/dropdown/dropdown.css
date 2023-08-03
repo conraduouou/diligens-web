@@ -1,4 +1,6 @@
 .dropdown {
+    /* modal is set to 2 in order to ensure this will not get over it */
+    z-index: 1;
     position: relative;
     width: 100%;
     margin-bottom: 24px;
