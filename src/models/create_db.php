@@ -1,4 +1,5 @@
 <?php
+
 require(__DIR__ . '/../../inc/config.php');
 require('helper_functions.php');
 

@@ -1,6 +1,6 @@
 <?php
 
-function handleServerError(Exception $e)
+function handleServerError(Exception $e = new Exception())
 {
     // echo $e->getMessage();
     header('Content-Type: application/json');
@@ -12,7 +12,7 @@ function handleServerError(Exception $e)
     );
 }
 
-function handleClientError(Exception $e)
+function handleClientError(Exception $e = new Exception())
 {
     // echo $e->getMessage();
     header('Content-Type: application/json');
