@@ -16,7 +16,9 @@ $routes = [
     BASE_URL_PATH . '/admin' => VIEWS_PATH . '/admin/admin.php',
 ];
 
-if ($tokens[3] == 'news' && isset($tokens[4])) {
+if (array_key_exists($requestPath, $routes)) {
+    include $routes[$requestPath];
+} else if ($tokens[3] == 'news' && isset($tokens[4])) {
     // in a large-scale/dynamic website, I think the id ($token[4]) should be passed to the
     // javascript controller of the specific news page, and then fetch the news data from
     // there using a dedicated php model file. This is only a routing file after all.
@@ -32,8 +34,6 @@ if ($tokens[3] == 'news' && isset($tokens[4])) {
     $serviceId = $tokens[4];
     setcookie("ServiceId", $serviceId);
     include VIEWS_PATH . '/service/service.php';
-} else if (array_key_exists($requestPath, $routes)) {
-    include $routes[$requestPath];
 } else {
     echo 404;
 }
