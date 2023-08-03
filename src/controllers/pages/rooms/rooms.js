@@ -37,7 +37,7 @@ function radioBtnOnclick(index) {
     roomMedia.innerHTML = title(rooms[currentRoomIndex].media);
 }
 
-async function submitForm(event, form) {
+async function submitForm(form) {
     const formData = new FormData(form);
     let body = '';
 
@@ -56,7 +56,6 @@ async function submitForm(event, form) {
             body: body
         });
         const response = await request.text();
-        const jsonResponse = JSON.parse(response);
     } catch (error) {
         console.error('Error: WHATS???!!', error);
     }
