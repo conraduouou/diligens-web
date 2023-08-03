@@ -20,6 +20,10 @@ if ($tokens[3] == 'news' && isset($tokens[4])) {
     // in a large-scale/dynamic website, I think the id ($token[4]) should be passed to the
     // javascript controller of the specific news page, and then fetch the news data from
     // there using a dedicated php model file. This is only a routing file after all.
+
+    // It could work both ways; it could load here before including the php file for the page, 
+    // effectively loading up the data before displaying the page, or fetching the data in the
+    // controller (showing a loading screen accordingly) and then displaying it once it's done.
     include VIEWS_PATH . '/news/news_' . $tokens[4] . '.php';
 } else if ($tokens[3] == 'stories' && isset($tokens[4]) && $tokens[4] && $tokens[4] <= 3) {
     $storyId = $tokens[4];
