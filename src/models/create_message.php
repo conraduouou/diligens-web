@@ -1,9 +1,11 @@
 <?php
 
-// Check db
-include('create_db.php');
+require('helper_functions.php');
 
 try {
+  // check db first
+  checkDatabaseAndCreate();
+
   // Create connection
   $conn = new mysqli('localhost', 'root', '', 'diligens_web');
 
@@ -38,16 +40,9 @@ try {
     );
   }
 } catch (Exception $e) {
-  // echo $e->getMessage();
-  header('Content-Type: application/json');
-
-  echo json_encode(
-    array(
-      'statusCode' => 500,
-      'message' => $e->getMessage() != "" ? 'There was an error on our end. Please try again later.' : $e->getMessage()
-    )
-  );
+  handleError($e);
 } finally {
   $conn->close();
 }
+
 ?>

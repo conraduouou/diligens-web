@@ -1,5 +1,7 @@
 <?php
 
+require('helper_functions.php');
+
 try {
   // Check if db exist
   $conn = new mysqli('localhost', 'root', '');
@@ -10,7 +12,6 @@ try {
 
   // If not ~ intiate and create db
 
-  // TODO: Delete database in localhost and recreate with new parameters
   // TODO: Handle data sending and loading states when data is sent from contact section and others
   // TODO: Create controllers and communicate with the database using the models
   if (!isset($row)) {
@@ -31,16 +32,9 @@ try {
   }
 
 } catch (Exception $e) {
-  // echo $e->getMessage();
-  header('Content-Type: application/json');
-
-  echo json_encode(
-    array(
-      'statusCode' => 500,
-      'message' => $e->getMessage() != "" ? 'There was an error on our end. Please try again later.' : $e->getMessage()
-    )
-  );
+  handleError($e);
 } finally {
   $conn->close();
 }
+
 ?>
