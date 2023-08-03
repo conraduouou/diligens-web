@@ -24,6 +24,7 @@
             <a href="#mission">Mission</a>
             <a href="#vision">Vision</a>
             <a href="#history">History</a>
+            <a href="#faq">FAQ</a>
         </div>
         <div class="info-section-content">
             <h2
@@ -65,6 +66,7 @@
                 id="history" class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-48 color-green-700">
                 History
             </h2>
+            <a id="faq"></a>
             <p
                 class="info-section-content-paragraph text-style-body text-style-weight-normal text-style-size-20 text-style-align-justify color-green-700">
                 Founded in 2009, Diligens Consultants, Inc. has been at the forefront of delivering high-quality
@@ -74,6 +76,105 @@
                 knowledge, enabling us to provide customized solutions tailored to each client's unique needs. As we
                 continue to grow and evolve, our commitment to excellence remains unwavering, and we look forward to
                 shaping many more success stories with our valued clients.
+            </p>
+            <h2
+                class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-48 color-green-700">
+                FAQ
+            </h2>
+            <h3 class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-24 color-green-700">
+                1. What services does Diligens Business Consultancy offer?
+            </h3>
+            <p
+                class="info-section-content-paragraph text-style-body text-style-weight-normal text-style-size-18 text-style-align-justify color-green-700">
+                Diligens Business Consultancy provides a wide range of services tailored to meet the unique needs of businesses. 
+                Our offerings include strategic planning, process improvement, financial management, marketing and sales strategies, 
+                human resources consulting, IT and technology advisory, change management, and more. We pride ourselves on 
+                delivering comprehensive solutions to help businesses achieve their goals and drive sustainable growth.
+            </p>
+            <h3 class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-24 color-green-700">
+                2. How do I know if my business needs consultancy services?
+            </h3>
+            <p
+                class="info-section-content-paragraph text-style-body text-style-weight-normal text-style-size-18 text-style-align-justify color-green-700">
+                Diligens Business Consultancy provides a wide range of services tailored to meet the unique needs of businesses. 
+                Our offerings include strategic planning, process improvement, financial management, marketing and sales strategies, 
+                human resources consulting, IT and technology advisory, change management, and more. We pride ourselves on 
+                delivering comprehensive solutions to help businesses achieve their goals and drive sustainable growth.
+            </p>
+            <h3 class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-24 color-green-700">
+                3. How are your consultants selected?
+            </h3>
+            <p
+                class="info-section-content-paragraph text-style-body text-style-weight-normal text-style-size-18 text-style-align-justify color-green-700">
+                At Diligens Business Consultancy, we have a rigorous selection process to ensure that our consultants are industry experts 
+                with a wealth of experience. We assess their qualifications, track record, industry knowledge, and problem-solving 
+                skills to ensure that they bring valuable insights and expertise to every client engagement.
+            </p>
+            <h3 class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-24 color-green-700">
+                4. What is the typical engagement process with Diligens Business Consultancy?
+            </h3>
+            <p
+                class="info-section-content-paragraph text-style-body text-style-weight-normal text-style-size-18 text-style-align-justify color-green-700">
+                Our engagement process begins with an initial consultation to understand your business's unique challenges 
+                and objectives. After assessing your needs, we tailor a customized consultancy plan, outlining the scope, 
+                timeline, and deliverables. Throughout the engagement, our consultants work closely with your team, providing 
+                regular updates, and presenting actionable recommendations. We believe in collaborative efforts to ensure 
+                successful implementation and long-term impact.
+            </p>
+            <h3 class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-24 color-green-700">
+                5. Can you guarantee results for my business?
+            </h3>
+            <p
+                class="info-section-content-paragraph text-style-body text-style-weight-normal text-style-size-18 text-style-align-justify color-green-700">
+                While we can't provide absolute guarantees, we are committed to delivering high-quality services and tangible results. 
+                Our consultancy process is data-driven, and we work closely with you to set realistic goals and measure progress 
+                along the way. We aim to provide valuable insights, actionable strategies, and continuous support to optimize 
+                your business's performance and maximize the chances of success.
+            </p>
+            <h3 class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-24 color-green-700">
+                6. Is my business information kept confidential?
+            </h3>
+            <p
+                class="info-section-content-paragraph text-style-body text-style-weight-normal text-style-size-18 text-style-align-justify color-green-700">
+                Absolutely! At Diligens Business Consultancy, we prioritize client confidentiality and data security. We 
+                sign non-disclosure agreements with all our clients to safeguard sensitive information. Rest assured 
+                that your business's proprietary data and strategic plans are treated with the utmost confidentiality.
+            </p>
+            <h3 class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-24 color-green-700">
+                7. What industries do you serve?
+            </h3>
+            <p
+                class="info-section-content-paragraph text-style-body text-style-weight-normal text-style-size-18 text-style-align-justify color-green-700">
+                We have a diverse team of consultants with expertise in various industries, including but not limited 
+                to healthcare, finance, technology, manufacturing, retail, and professional services. Our wide-ranging 
+                experience allows us to serve businesses across different sectors effectively.
+            </p>
+            <h3 class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-24 color-green-700">
+                8. How do I get started with Diligens Business Consultancy?
+            </h3>
+            <p
+                class="info-section-content-paragraph text-style-body text-style-weight-normal text-style-size-18 text-style-align-justify color-green-700">
+                To get started, simply reach out to us through our website or contact our office. Our client relations 
+                team will schedule an initial consultation to understand your requirements and match you with the most 
+                suitable consultant for your specific needs.
+            </p>
+            <h3 class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-24 color-green-700">
+                9. What sets Diligens Business Consultancy apart from other consulting firms?
+            </h3>
+            <p
+                class="info-section-content-paragraph text-style-body text-style-weight-normal text-style-size-18 text-style-align-justify color-green-700">
+                At Diligens Business Consultancy, we distinguish ourselves through our client-centric approach, industry expertise, 
+                data-driven methodologies, and commitment to delivering measurable results. Our team of consultants is passionate 
+                about empowering businesses to succeed, and we tailor our solutions to suit the unique challenges each client faces.
+            </p>
+            <h3 class="info-section-content-header text-style-headline text-style-weight-bold text-style-size-24 color-green-700">
+                10. Can you provide references from previous clients?
+            </h3>
+            <p
+                class="info-section-content-paragraph text-style-body text-style-weight-normal text-style-size-18 text-style-align-justify color-green-700">
+                Certainly! We can provide references and testimonials from previous clients who have benefited from our 
+                consultancy services. Feel free to ask, and we'll be more than happy to share their experiences working 
+                with Diligens Business Consultancy.
             </p>
         </div>
     </div>

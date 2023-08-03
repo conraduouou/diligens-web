@@ -26,6 +26,11 @@
                         <a href="/diligens_web/index.php/stories">Stories</a>
                         <a href="/diligens_web/index.php/contact-us">Contact us</a>
                     </div>
+                    <div class="footer-links-col3 flex-container-col">
+                        <a href="/diligens_web/index.php/about-us#faq">FAQ</a>
+                        <a href="/diligens_web/index.php/services#consultants">Consultants</a>
+                        <a href="/diligens_web/index.php#appointment">Set an Appointment</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-reach">

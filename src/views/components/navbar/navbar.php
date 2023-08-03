@@ -15,11 +15,12 @@
                     <div class="diligens">Diligens</div>
                 </a>
                 <div class="right-section">
-                    <a class="links" href="/diligens_web/index.php/services">Services</a>
-                    <a class="links" href="/diligens_web/index.php/rooms">Rooms</a>
                     <a class="links" href="/diligens_web/index.php/stories">Stories</a>
                     <a class="links" href="/diligens_web/index.php/about-us">About Us</a>
                     <a class="links" href="/diligens_web/index.php/contact-us">Contact Us</a>
+                    <a class="links" href="/diligens_web/index.php/services">Services</a>
+                    <a class="links" href="/diligens_web/index.php/rooms">Rooms</a>
+                    <a class="links" href="/diligens_web/index.php#appointment">Appointment</a>
             </nav>
         </div>
     </header>

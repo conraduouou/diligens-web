@@ -26,7 +26,9 @@
             <a href="#advice">Professional Advice</a>
             <a href="#tax">Tax Advisory</a>
             <a href="#consulting">Consulting</a>
+            <a href="#consultants">Consultants</a>
             <a href="#room">Rooms</a>
+            <a href="#appointment">Appointment</a>
         </div>
 
         <div class="body-container-content">
@@ -108,9 +110,76 @@
                     ?>
                 </div>
             </div>
+
+            <!--- Consultants--->
+            <div id="consultants" class="service-container">
+                <div class="left-side">
+                    <div class="left-side-title">Consultants</div>
+                    <div class="image-container">
+                        <img src="<?php echo PROJECT_ROOT_PATH . '/assets/consultant1.png' ?>" alt="Image 4">
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <p class="right-side-text">
+                        <strong  class="text-style-size-28">Jhon Doe</strong>
+                        <br>
+                        <br>
+                        Specializing in financial management, I am a results-driven business consultant with a track record 
+                        of empowering companies to make informed financial decisions. Armed with an in-depth understanding 
+                        of financial analysis and risk assessment, I develop comprehensive financial plans that align with 
+                        business objectives. My expertise in budgeting, forecasting, and cost optimization ensures clients 
+                        can maximize profitability while maintaining financial stability. With an unwavering commitment to 
+                        client success, I navigate regulatory complexities and deliver strategies that bolster financial 
+                        resilience in dynamic market landscapes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-container">
+                <div class="left-side">
+                    <div class="image-container">
+                        <img src="<?php echo PROJECT_ROOT_PATH . '/assets/consultant2.png' ?>" alt="Image 4">
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <p class="right-side-text">
+                        <strong class="text-style-size-28">Myra E Celia</strong>
+                        <br>
+                        <br>
+                        A dynamic business consultant with a flair for marketing and sales, I propel brands to new heights through 
+                        innovative campaigns and customer-centric approaches. My data-driven insights and market research prowess 
+                        empower clients to refine their brand identity, increase market share, and outperform competitors. As a 
+                        sales strategist, I enhance lead generation and conversion strategies, equipping sales teams with cutting-edge 
+                        techniques for lasting customer relationships. By driving revenue growth and market penetration, I accelerate 
+                        businesses towards sustainable, revenue-focused success.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-container">
+                <div class="left-side">
+                    <div class="image-container">
+                        <img src="<?php echo PROJECT_ROOT_PATH . '/assets/consultant3.png' ?>" alt="Image 4">
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <p class="right-side-text">
+                        <strong class="text-style-size-28">Mary Q. Pawn</strong>
+                        <br>
+                        <br>
+                        With a passion for guiding organizations through transformational change, I am a seasoned business consultant 
+                        specializing in change management and organizational development. My empathetic leadership style and active 
+                        listening skills enable me to connect with stakeholders at all levels, fostering a positive and adaptive 
+                        company culture. From mergers and acquisitions to digital transformations, I devise robust change management 
+                        strategies that mitigate resistance and facilitate smooth transitions. By coaching leadership teams and empowering 
+                        employees, I cultivate resilience and agility within organizations, ensuring they thrive amidst ever-evolving business landscapes.
+                    </p>
+                </div>
+            </div>
         </div>
-
-
     </div>
     <!--- Looking for meeting rooms + button --->
     <div id="room" class="meeting-room-container">
@@ -127,7 +196,11 @@
         include COMPONENTS_PATH . '/primary_button/primary_button.php';
         ?>
     </div>
-
+    <div class="contact-section-home" style="margin: 130px" id="appointment">
+        <?php
+        include COMPONENTS_PATH . '/contact_section/contact_section.php';
+        ?>
+    </div>
     <?php
     include COMPONENTS_PATH . '/footer/footer.php';
     ?>
