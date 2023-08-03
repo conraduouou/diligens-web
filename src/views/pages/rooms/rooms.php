@@ -21,7 +21,7 @@
     include COMPONENTS_PATH . '/title_section/title_section.php';
     ?>
 
-    <div id="modal-container" class="show-modal" tabindex="0">
+    <div id="modal-container" class="no-show-modal" tabindex="0">
         <div id="modal" class="flex-container-col">
             <p class="text-style-display text-style-weight-bold text-style-size-36 color-neutral-900 margin-none">
                 Submit booking

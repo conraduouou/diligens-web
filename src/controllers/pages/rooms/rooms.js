@@ -63,7 +63,7 @@ async function submitForm(form) {
         } else {
             document.cookie = 'submit=failed';
         }
-        window.location.replace('localhost/diligens_web/index.php');
+        window.location.replace('/diligens_web/index.php');
     } catch (error) {
         console.error('Error: WHATS???!!', error);
     }
