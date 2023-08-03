@@ -18,7 +18,7 @@ $routes = [
 
 if (array_key_exists($requestPath, $routes)) {
     include $routes[$requestPath];
-} else if ($tokens[3] == 'news' && isset($tokens[4])) {
+} else if (isset($tokens[3]) && $tokens[3] == 'news' && isset($tokens[4])) {
     // in a large-scale/dynamic website, I think the id ($token[4]) should be passed to the
     // javascript controller of the specific news page, and then fetch the news data from
     // there using a dedicated php model file. This is only a routing file after all.
@@ -27,10 +27,10 @@ if (array_key_exists($requestPath, $routes)) {
     // effectively loading up the data before displaying the page, or fetching the data in the
     // controller (showing a loading screen accordingly) and then displaying it once it's done.
     include VIEWS_PATH . '/news/news_' . $tokens[4] . '.php';
-} else if ($tokens[3] == 'stories' && isset($tokens[4]) && $tokens[4] && $tokens[4] <= 3) {
+} else if (isset($tokens[3]) && $tokens[3] == 'stories' && isset($tokens[4]) && $tokens[4] && $tokens[4] <= 3) {
     $storyId = $tokens[4];
     include VIEWS_PATH . '/story/story_' . $tokens[4] . '.php';
-} else if ($tokens[3] == 'services' && isset($tokens[4]) && $tokens[4] && $tokens[4] <= 3) {
+} else if (isset($tokens[3]) && $tokens[3] == 'services' && isset($tokens[4]) && $tokens[4] && $tokens[4] <= 3) {
     $serviceId = $tokens[4];
     setcookie("ServiceId", $serviceId);
     include VIEWS_PATH . '/service/service.php';
