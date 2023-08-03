@@ -10,10 +10,14 @@ function wrapType(type, index) {
 }
 
 async function getRooms() {
-    const response = await fetch('/diligens_web/src/models/get_rooms.php', { method: 'GET' });
-    const text = await response.text();
-    const result = JSON.parse(text);
-    rooms.push(...result.body);
+    try {
+        const response = await fetch('/diligens_web/src/models/get_rooms.php', { method: 'GET' });
+        const text = await response.text();
+        const result = JSON.parse(text);
+        rooms.push(...result.body);
+    } catch (error) {
+        alert(error + '\n\nThere was an error on our end. Please try again later.');
+    }
 }
 
 function title(str) {

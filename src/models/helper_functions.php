@@ -7,7 +7,7 @@ function handleServerError(Exception $e = new Exception())
     echo json_encode(
         array(
             'statusCode' => 500,
-            'message' => $e->getMessage() != "" ? 'There was an error on our end. Please try again later.' : $e->getMessage()
+            'message' => empty($e->getMessage()) ? 'There was an error on our end. Please try again later.' : $e->getMessage()
         )
     );
 }
@@ -19,7 +19,7 @@ function handleClientError(Exception $e = new Exception())
     echo json_encode(
         array(
             'statusCode' => $e->getCode() != 0 ? $e->getCode() : 400,
-            'message' => $e->getMessage() != "" ? 'There was an error making your request. Please make sure all required fields are filled.' : $e->getMessage()
+            'message' => empty($e->getMessage()) != "" ? 'There was an error making your request. Please make sure all required fields are filled.' : $e->getMessage()
         )
     );
 }

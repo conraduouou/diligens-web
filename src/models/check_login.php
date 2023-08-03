@@ -1,6 +1,7 @@
 <?php
 
 try {
+    require_once(__DIR__ . '/../../inc/config.php');
     require('helper_functions.php');
     
     // check db first

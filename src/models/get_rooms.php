@@ -1,8 +1,10 @@
 <?php
 
-require('helper_functions.php');
 
 try {
+    require_once(__DIR__ . '/../../inc/config.php');
+    require('helper_functions.php');
+    
     // check db first
     checkDatabaseAndCreate();
 
@@ -29,6 +31,7 @@ try {
     //throw $th;
     handleServerError();
 } catch (Throwable $th) {
+    echo $th->getMessage();
     // echo $th->getMessage();
     handleServerError();
 } finally {
