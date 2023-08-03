@@ -16,18 +16,19 @@ try {
   if (!isset($row)) {
     $conn->query("CREATE DATABASE IF NOT EXISTS diligens_web");
 
+    $conn->select_db('diligens_web');
+
     // make this into room_requests (?)
-    $conn->query("CREATE TABLE `diligens_web`.`appointment_list` (`id` INT(50) NULL DEFAULT NULL , `name` VARCHAR(50) NULL DEFAULT NULL , `email` VARCHAR(50) NULL DEFAULT NULL , `number` INT(50) NULL DEFAULT NULL , `company` VARCHAR(50) NULL DEFAULT NULL , `room_id` VARCHAR(50) NULL DEFAULT NULL , `date` DATE NULL DEFAULT NULL ) ENGINE = InnoDB");
+    $conn->query("CREATE TABLE `appointment_list` (`id` INT(50) NULL DEFAULT NULL , `name` VARCHAR(50) NULL DEFAULT NULL , `email` VARCHAR(50) NULL DEFAULT NULL , `number` INT(50) NULL DEFAULT NULL , `company` VARCHAR(50) NULL DEFAULT NULL , `room_id` VARCHAR(50) NULL DEFAULT NULL , `date` DATE NULL DEFAULT NULL ) ENGINE = InnoDB");
 
-    $conn->query("CREATE TABLE `diligens_web`.`message_list` (`name` VARCHAR(50) NULL DEFAULT NULL , `email` VARCHAR(50) NULL DEFAULT NULL , `mobile` VARCHAR(50) NULL DEFAULT NULL , `company` VARCHAR(50) NULL DEFAULT NULL , `message` VARCHAR(300) NULL DEFAULT NULL ) ENGINE = InnoDB");
+    $conn->query("CREATE TABLE `message_list` (`name` VARCHAR(50) NULL DEFAULT NULL , `email` VARCHAR(50) NULL DEFAULT NULL , `mobile` VARCHAR(50) NULL DEFAULT NULL , `company` VARCHAR(50) NULL DEFAULT NULL , `message` VARCHAR(300) NULL DEFAULT NULL ) ENGINE = InnoDB");
 
-    $conn->query("CREATE TABLE `diligens_web`.`admin_user_list` (`username` VARCHAR(50) NULL DEFAULT NULL , `password` VARCHAR(50) NULL DEFAULT NULL , `type` VARCHAR(50) NULL DEFAULT NULL ) ENGINE = InnoDB");
+    $conn->query("CREATE TABLE `admin_user_list` (`username` VARCHAR(50) NULL DEFAULT NULL , `password` VARCHAR(50) NULL DEFAULT NULL , `type` VARCHAR(50) NULL DEFAULT NULL ) ENGINE = InnoDB");
 
-    $conn->query("CREATE TABLE `diligens_web`.`rooms_list` (`id` INT(50) NULL DEFAULT NULL , `type` VARCHAR(50) NULL DEFAULT NULL , `cost` DECIMAL(50) NULL DEFAULT NULL , `media` VARCHAR(50) NULL DEFAULT NULL , `capacity` INT(50) NULL DEFAULT NULL)");
+    $conn->query("CREATE TABLE `rooms_list` (`id` INT(50) NULL DEFAULT NULL , `type` VARCHAR(50) NULL DEFAULT NULL , `cost` DECIMAL(50) NULL DEFAULT NULL , `media` VARCHAR(50) NULL DEFAULT NULL , `capacity` INT(50) NULL DEFAULT NULL)");
 
-    $conn->query("INSERT INTO `diligens_web`.`admin_user_list`(`username`, `password`, `type`) VALUES ('admin','admin','admin')");
+    $conn->query("INSERT INTO `admin_user_list`(`username`, `password`, `type`) VALUES ('admin','admin','admin')");
   }
-
 
 } catch (Exception $e) {
   // echo $e->getMessage();
