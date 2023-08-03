@@ -38,24 +38,32 @@ function radioBtnOnclick(index) {
 }
 
 async function submitForm(form) {
-    const formData = new FormData(form);
-    let body = '';
-
-    for (const pair of formData.entries()) {
-        if (pair[0] == 'type') {
-            body += 'room_id' + '=' + (currentRoomIndex + 1) + '&';
-        } else {
-            body += pair[0] + '=' + pair[1] + '&';
-        }
-    }
-
     try {
+        const formData = new FormData(form);
+        let body = '';
+
+        for (const pair of formData.entries()) {
+            if (pair[0] == 'type') {
+                body += 'room_id' + '=' + (currentRoomIndex + 1) + '&';
+            } else {
+                body += pair[0] + '=' + pair[1] + '&';
+            }
+        }
+
         const request = await fetch('/diligens_web/src/models/create_room_request.php', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: body
         });
         const response = await request.text();
+        const jsonResponse = JSON.parse(response);
+
+        if (jsonResponse.statusCode == 201) {
+            document.cookie = 'submit=success';            
+        } else {
+            document.cookie = 'submit=failed';
+        }
+        window.location.replace('localhost/diligens_web/index.php');
     } catch (error) {
         console.error('Error: WHATS???!!', error);
     }
@@ -92,18 +100,18 @@ document.addEventListener('DOMContentLoaded', async function () {
     const modalCancel = document.getElementById('modal-cancel');
     const modalSubmit = document.getElementById('modal-submit');
 
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('submit', function (event) {
         event.preventDefault();
         modalContainer.classList.remove('no-show-modal')
         modalContainer.classList.add('show-modal');
     });
 
-    modalContainer.addEventListener('click', function() {
+    modalContainer.addEventListener('click', function () {
         modalContainer.classList.remove('show-modal');
         modalContainer.classList.add('no-show-modal');
     })
 
-    modalCancel.addEventListener('click', function() {
+    modalCancel.addEventListener('click', function () {
         modalContainer.classList.remove('show-modal');
         modalContainer.classList.add('no-show-modal');
     })
