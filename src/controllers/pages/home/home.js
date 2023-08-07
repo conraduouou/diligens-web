@@ -1,27 +1,27 @@
+import { HideableElement } from "../../common/hideable_element.js";
+
 document.addEventListener('DOMContentLoaded', function () {
-    if (document.cookie.length == 0) {
+    const isSuccess = sessionStorage.getItem('bookingSuccess');
+
+    // abort operation if user got to home without booking
+    if (isSuccess == null) {
         return;
     }
 
-    const formResponse = document.cookie.split('=')[1];
-
-    if (formResponse === 'success') {
-        const modalContainer = document.getElementById('modal-container');
+    if (isSuccess === 'true') {
+        const modalContainer = new HideableElement('modal-container', 'show-modal', 'no-show-modal');
         const modalSubmit = document.getElementById('modal-submit');
 
-        modalContainer.classList.remove('no-show-modal');
-        modalContainer.classList.add('show-modal');
+        modalContainer.show();
 
-        modalContainer.addEventListener('click', function () {
-            modalContainer.classList.remove('show-modal');
-            modalContainer.classList.add('no-show-modal');
-            document.cookie = 'submit=none';
-        })
+        modalContainer.element.addEventListener('click', function() {
+            modalContainer.unshow();
+            sessionStorage.removeItem('bookingSuccess');
+        });
 
-        modalSubmit.addEventListener('click', function () {
-            modalContainer.classList.remove('show-modal');
-            modalContainer.classList.add('no-show-modal');
-            document.cookie = 'submit=none';
-        })
+        modalSubmit.addEventListener('click', function() {
+            modalContainer.unshow();
+            sessionStorage.removeItem('bookingSuccess');
+        });
     }
 });

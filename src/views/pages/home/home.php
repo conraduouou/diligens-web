@@ -160,7 +160,7 @@
     include COMPONENTS_PATH . '/footer/footer.php';
     ?>
     
-    <script src="<?= PROJECT_ROOT_PATH . '/' . CONTROLLERS_PATH . '/pages/home/home.js' ?>" ></script>
+    <script type="module" src="<?= PROJECT_ROOT_PATH . '/' . CONTROLLERS_PATH . '/pages/home/home.js' ?>" ></script>
 </body>
 
 </html>

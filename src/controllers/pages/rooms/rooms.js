@@ -1,3 +1,5 @@
+import { HideableElement } from "../../common/hideable_element.js";
+
 const rooms = [];
 let currentRoomIndex = 0;
 
@@ -9,6 +11,10 @@ function wrapType(type, index) {
     return toReturn;
 }
 
+function title(str) {
+    return str.replace(/(^|\s)\S/g, function (t) { return t.toUpperCase() });
+}
+
 async function getRooms() {
     try {
         const response = await fetch('/diligens_web/src/models/get_rooms.php', { method: 'GET' });
@@ -18,23 +24,6 @@ async function getRooms() {
     } catch (error) {
         alert(error + '\n\nThere was an error on our end. Please try again later.');
     }
-}
-
-function title(str) {
-    return str.replace(/(^|\s)\S/g, function (t) { return t.toUpperCase() });
-}
-
-function radioBtnOnclick(index) {
-    const dropdownButton = document.getElementById('dropdown-button');
-    const roomCost = document.getElementById('room-cost');
-    const roomCapacity = document.getElementById('room-capacity');
-    const roomMedia = document.getElementById('room-media');
-
-    currentRoomIndex = index;
-    dropdownButton.innerHTML = 'Type ' + rooms[currentRoomIndex].type;
-    roomCost.innerHTML = rooms[currentRoomIndex].cost + ' php/hr';
-    roomCapacity.innerHTML = rooms[currentRoomIndex].capacity_min + '-' + rooms[currentRoomIndex].capacity_max + ' people';
-    roomMedia.innerHTML = title(rooms[currentRoomIndex].media);
 }
 
 async function submitForm(form) {
@@ -59,20 +48,30 @@ async function submitForm(form) {
         const jsonResponse = JSON.parse(response);
 
         if (jsonResponse.statusCode == 201) {
-            document.cookie = 'submit=success';            
+            sessionStorage.setItem('bookingSuccess', 'true');
+            return true;
         } else {
-            document.cookie = 'submit=failed';
+            return false;
         }
-        window.location.replace('/diligens_web/index.php');
     } catch (error) {
         console.error('Error: WHATS???!!', error);
     }
 }
 
-document.addEventListener('DOMContentLoaded', async function () {
-    // retrieve types
-    await getRooms();
+function radioBtnOnclick(index) {
+    const dropdownButton = document.getElementById('dropdown-button');
+    const roomCost = document.getElementById('room-cost');
+    const roomCapacity = document.getElementById('room-capacity');
+    const roomMedia = document.getElementById('room-media');
 
+    currentRoomIndex = index;
+    dropdownButton.innerHTML = 'Type ' + rooms[currentRoomIndex].type;
+    roomCost.innerHTML = rooms[currentRoomIndex].cost + ' php/hr';
+    roomCapacity.innerHTML = rooms[currentRoomIndex].capacity_min + '-' + rooms[currentRoomIndex].capacity_max + ' people';
+    roomMedia.innerHTML = title(rooms[currentRoomIndex].media);
+}
+
+function initDropdown() {
     const dropdownButton = document.getElementById('dropdown-button');
     dropdownButton.innerHTML = 'Type ' + rooms[currentRoomIndex].type;
 
@@ -89,33 +88,47 @@ document.addEventListener('DOMContentLoaded', async function () {
         let button = radioButtons[i];
         button.addEventListener('click', () => radioBtnOnclick(i));
     }
+}
 
-    const bookSection = document.getElementById('book-section');
-    bookSection.classList.remove('no-show');
-    bookSection.classList.add('show');
+document.addEventListener('DOMContentLoaded', async function () {
+    // retrieve types
+    await getRooms();
+    initDropdown();
 
-    // add listener for when the form is submitted
+    // hideable elements
+    const bookSection = new HideableElement('book-section');
+    const modalContainer = new HideableElement('modal-container', 'show-modal', 'no-show-modal');
+    modalContainer.element.addEventListener('click', modalContainer.unshow);
+
     const form = document.getElementById('book-section-form');
-    const modalContainer = document.getElementById('modal-container');
     const modalCancel = document.getElementById('modal-cancel');
     const modalSubmit = document.getElementById('modal-submit');
 
+    // because the book section is hidden at first for loading...
+    bookSection.show();
+
+    // add listener for when the form is submitted
     form.addEventListener('submit', function (event) {
         event.preventDefault();
-        modalContainer.classList.remove('no-show-modal')
-        modalContainer.classList.add('show-modal');
+        modalContainer.show();
     });
 
-    modalContainer.addEventListener('click', function () {
-        modalContainer.classList.remove('show-modal');
-        modalContainer.classList.add('no-show-modal');
-    })
+    // dismiss modal when clicking on modal background or cancel
+    modalCancel.addEventListener('click', modalContainer.unshow);
 
-    modalCancel.addEventListener('click', function () {
-        modalContainer.classList.remove('show-modal');
-        modalContainer.classList.add('no-show-modal');
-    })
+    modalSubmit.addEventListener('click', async () => {
+        modalContainer.unshow();
+        bookSection.unshow();
 
-    modalSubmit.addEventListener('click', () => submitForm(form));
+        const isSuccess = await submitForm(form);
+
+        if (isSuccess) {
+            window.location.replace('/diligens_web/index.php');
+        } else {
+            // show error when not successful
+            modalContainer.show();
+            bookSection.show();
+        }
+    });
 });
 

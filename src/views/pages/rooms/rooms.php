@@ -93,7 +93,7 @@
         </div>
     </div>
 
-    <script src="<?php echo PROJECT_ROOT_PATH . '/' . CONTROLLERS_PATH . '/pages/rooms/rooms.js' ?>"></script>
+    <script type="module" src="<?php echo PROJECT_ROOT_PATH . '/' . CONTROLLERS_PATH . '/pages/rooms/rooms.js' ?>"></script>
 
     <?php
     include COMPONENTS_PATH . '/footer/footer.php';
