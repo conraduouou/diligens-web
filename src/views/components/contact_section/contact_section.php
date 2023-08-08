@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/' . COMPONENTS_PATH . '/contact_section/contact_section.css' ?>">
     <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/' . COMPONENTS_PATH . '/primary_button/primary_button.css' ?>">
     <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/' . COMPONENTS_PATH . '/textfield/textfield.css' ?>">
+    <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/' . COMPONENTS_PATH . '/hideable_element/hideable_element.css' ?>">
+    <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/' . COMPONENTS_PATH . '/modal/modal.css' ?>">
 </head>
 
 <body>
@@ -17,7 +19,7 @@
             Reach out to us today and let's start building a bright future together—<br>
             your success is our top priority!
         </p>
-        <form class="contact-section-form flex-container-col" id="contact-form" method="POST">
+        <form id="contact-form" class="flex-container-col" method="POST">
             <div class="flex-container-row">
                 <div class="contact-section-form-details">
                     <label for="name" class="textfield-label text-style-label">Name</label>
@@ -39,7 +41,19 @@
         </form>
     </div>
 
-    <script src="<?php echo PROJECT_ROOT_PATH . '/' . CONTROLLERS_PATH . '/components/contact_section/contact_section.js' ?>"></script>
+    <div id="modal-container" class="no-show" tabindex="0">
+        <div id="modal" class="flex-container-col">
+            <p id="modal-title" class="text-style-display text-style-weight-bold text-style-size-36 color-neutral-900 margin-none"></p>
+            <div class="modal-line"></div>
+            <div class="modal-content">
+                <p id="modal-content-main" class="text-style-display text-style-weight-bold text-style-size-28 color-neutral-900"></p>
+                <p id="modal-content-sub" class="text-style-display text-style-weight-medium text-style-size-20 color-neutral-600"></p>
+            </div>
+            <div id="modal-button-container" class="text-style-display text-style-weight-semibold text-style-size-28 color-neutral-900 flex-container-row"></div>
+        </div>
+    </div>
+
+    <script type="module" src="<?php echo PROJECT_ROOT_PATH . '/' . CONTROLLERS_PATH . '/components/contact_section/contact_section.js' ?>"></script>
 </body>
 
 </html>

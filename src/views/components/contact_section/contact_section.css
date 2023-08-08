@@ -7,7 +7,11 @@
     margin: 0 0 48px;
 }
 
-.contact-section-form > div {
+#contact-form {
+    transition: opacity 0.4s ease;
+}
+
+#contact-form > div {
     margin-bottom: 84px;
 }
 

@@ -116,9 +116,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     });
 
     // dismiss modal when clicking on modal background or cancel
-    modalCancel.addEventListener('click', () => {
-        modalContainer.unshow();
-    });
+    modalCancel.addEventListener('click', () => modalContainer.unshow());
 
     modalSubmit.addEventListener('click', async () => {
         modalContainer.unshow();
