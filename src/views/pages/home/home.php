@@ -15,26 +15,6 @@
 <body>
     <?php include COMPONENTS_PATH . '/navbar/navbar.php' ?>
 
-    <div id="modal-container" class="no-show-modal" tabindex="0">
-        <div id="modal" class="flex-container-col">
-            <p class="text-style-display text-style-weight-bold text-style-size-36 color-neutral-900 margin-none">
-                Success!
-            </p>
-            <div class="modal-line"></div>
-            <div class="modal-content">
-                <p class="text-style-display text-style-weight-bold text-style-size-28 color-neutral-900">
-                    Thank you. Kindly wait for the confirmation via SMS/Email.
-                </p>
-                <p class="text-style-display text-style-weight-medium text-style-size-20 color-neutral-600">
-                    If confirmation did not arrive within minutes, contact support.
-                </p>
-            </div>
-            <div class="modal-button-container text-style-display text-style-weight-semibold text-style-size-28 color-neutral-900 flex-container-row">
-                <button id="modal-submit">Done</button>
-            </div>
-        </div>
-    </div>
-
     <div class="first-section flex-container-row">
         <img src="assets/illustration1.svg" alt="illustration 1" class="illustration">
         <div class="flex-expand"></div>
@@ -157,6 +137,27 @@
         include COMPONENTS_PATH . '/contact_section/contact_section.php';
         ?>
     </div>
+
+    <div id="modal-container" class="no-show" tabindex="0">
+        <div id="modal" class="flex-container-col">
+            <p id="modal-title" class="text-style-display text-style-weight-bold text-style-size-36 color-neutral-900 margin-none">
+                Success!
+            </p>
+            <div class="modal-line"></div>
+            <div class="modal-content">
+                <p id="modal-content-main" class="text-style-display text-style-weight-bold text-style-size-28 color-neutral-900">
+                    Thank you. Kindly wait for the confirmation via SMS/Email.
+                </p>
+                <p id="modal-content-sub" class="text-style-display text-style-weight-medium text-style-size-20 color-neutral-600">
+                    If confirmation did not arrive within minutes, contact support.
+                </p>
+            </div>
+            <div id="modal-button-container" class="text-style-display text-style-weight-semibold text-style-size-28 color-neutral-900 flex-container-row">
+                <button id="modal-submit">Done</button>
+            </div>
+        </div>
+    </div>
+
     <?php
     include COMPONENTS_PATH . '/footer/footer.php';
     ?>

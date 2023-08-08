@@ -34,11 +34,11 @@
     margin: 0 0 52px 0;
 }
 
-.modal-button-container {
+#modal-button-container {
     justify-content: space-evenly;
 }
 
-.modal-button-container button {
+#modal-button-container button {
     border: unset;
     border-radius: 55px;
     font-size: 28px;
