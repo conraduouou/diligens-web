@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'bookingSuccess', 'appointmentSuccess'
     ];
 
-    for (const sessionItem in toCheckInSession) {
+    for (const sessionItem of toCheckInSession) {
         let isSuccess = sessionStorage.getItem(sessionItem);
     
         // abort operation if user got to home without booking
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 modalContainer.unshow();
                 sessionStorage.removeItem('bookingSuccess');
             });
-            
+
             return;
         }
     }
