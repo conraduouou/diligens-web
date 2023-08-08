@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/' . COMPONENTS_PATH . '/primary_button/primary_button.css' ?>">
     <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/' . COMPONENTS_PATH . '/dropdown/dropdown.css' ?>">
     <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/' . COMPONENTS_PATH . '/modal/modal.css' ?>">
+    <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/' . COMPONENTS_PATH . '/hideable_element/hideable_element.css' ?>">
     <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/' . VIEWS_PATH . '/rooms/rooms.css' ?>">
     <link rel="stylesheet" href="<?php echo PROJECT_ROOT_PATH . '/assets/style.css' ?>">
     <title>Diligens | Rooms</title>
@@ -69,7 +70,7 @@
         </div>
     </div>
 
-    <div id="modal-container" class="no-show-modal" tabindex="0">
+    <div id="modal-container" class="no-show" tabindex="0">
         <div id="modal" class="flex-container-col">
             <p class="text-style-display text-style-weight-bold text-style-size-36 color-neutral-900 margin-none">
                 Submit booking

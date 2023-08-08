@@ -1,30 +1,37 @@
-function submitForm(form, action) {
-    const formData = new FormData(form);
-    let body = '';
+import { HideableElement } from "../../common/hideable_element.js";
 
-    for (const pair of formData.entries()) {
-        body += pair[0] + '=' + pair[1] + '&';
-    }
-
-    fetch(action, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: body,
-    })
-        .then(responseData => responseData.text())
-        .then(text => {
-            const response = JSON.parse(text);
-            alert(response.message);
+async function submitForm(form, action) {
+    try {
+        const formData = new FormData(form);
+        let body = '';
+    
+        for (const pair of formData.entries()) {
+            body += pair[0] + '=' + pair[1] + '&';
+        }
+    
+        const request = await fetch(action, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: body,
         })
-        .catch(error => {
-            console.error('Error: WHATS???!! ', error);
-        });
+        const response = await request.text();
+        const jsonResponse = JSON.parse(response);
+        
+        if (jsonResponse.statusCode == 201) {
+            sessionStorage.setItem('appointmentSuccess', 'true');
+            return true;
+        } else {
+            return false;
+        }
+    } catch (error) {
+        console.error('Error: WHATS???!!', error);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('contact-form');
 
-    form.addEventListener('submit', function (event) {
+    form.addEventListener('submit', async function (event) {
         event.preventDefault();
 
         const name = document.getElementById('name').value;
@@ -38,6 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        submitForm(form, '/diligens_web/src/models/create_message.php');
+        await submitForm(form, '/diligens_web/src/models/create_message.php');
     });
 });

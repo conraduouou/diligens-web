@@ -97,8 +97,10 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // hideable elements
     const bookSection = new HideableElement('book-section');
-    const modalContainer = new HideableElement('modal-container', 'show-modal', 'no-show-modal');
-    modalContainer.element.addEventListener('click', modalContainer.unshow);
+    const modalContainer = new HideableElement('modal-container');
+    modalContainer.element.addEventListener('click', () => {
+        modalContainer.unshow();
+    });
 
     const form = document.getElementById('book-section-form');
     const modalCancel = document.getElementById('modal-cancel');
@@ -114,7 +116,9 @@ document.addEventListener('DOMContentLoaded', async function () {
     });
 
     // dismiss modal when clicking on modal background or cancel
-    modalCancel.addEventListener('click', modalContainer.unshow);
+    modalCancel.addEventListener('click', () => {
+        modalContainer.unshow();
+    });
 
     modalSubmit.addEventListener('click', async () => {
         modalContainer.unshow();

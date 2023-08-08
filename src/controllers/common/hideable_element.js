@@ -1,13 +1,17 @@
 export class HideableElement {
     constructor(elementId, showClass = 'show', unshowClass = 'no-show') {
         this.element = document.getElementById(elementId);
-        this.show = function () {
-            this.element.classList.remove(unshowClass);
-            this.element.classList.add(showClass);
-        };
-        this.unshow = function () {
-            this.element.classList.remove(showClass);
-            this.element.classList.add(unshowClass);
-        };
+        this.showClass = showClass;
+        this.unshowClass = unshowClass;
+    }
+
+    show() {
+        this.element.classList.remove(this.unshowClass);
+        this.element.classList.add(this.showClass);
+    }
+
+    unshow() {
+        this.element.classList.remove(this.showClass);
+        this.element.classList.add(this.unshowClass);
     }
 };

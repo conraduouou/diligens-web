@@ -8,14 +8,6 @@ h2 {
     transition: opacity 0.4s ease;
 }
 
-.no-show {
-    opacity: 0;
-}
-
-.show {
-    opacity: 1;
-}
-
 .book-section-left img {
     width: 38vw;
     margin-bottom: 60px;
