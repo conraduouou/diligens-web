@@ -1,4 +1,5 @@
 import { HideableElement } from "../../common/hideable_element.js";
+import { Modal } from "../../common/modal.js";
 
 const rooms = [];
 let currentRoomIndex = 0;
@@ -97,10 +98,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // hideable elements
     const bookSection = new HideableElement('book-section');
-    const modalContainer = new HideableElement('modal-container');
-    modalContainer.element.addEventListener('click', () => {
-        modalContainer.unshow();
-    });
+    const modalContainer = new Modal('modal-container');
 
     const form = document.getElementById('book-section-form');
     const modalCancel = document.getElementById('modal-cancel');

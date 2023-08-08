@@ -1,4 +1,4 @@
-import { HideableElement } from "../../common/hideable_element.js";
+import { Modal } from "../../common/modal.js";
 
 document.addEventListener('DOMContentLoaded', function () {
     const toCheckInSession = [
@@ -14,20 +14,20 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     
         if (isSuccess === 'true') {
-            const modalContainer = new HideableElement('modal-container', 'show-modal', 'no-show-modal');
-            const modalSubmit = document.getElementById('modal-submit');
-    
-            modalContainer.show();
+            const modalContainer = new Modal('modal-home-container');
+            const modalSubmit = document.querySelector('#modal-home-container .modal-submit');
     
             modalContainer.element.addEventListener('click', function() {
-                modalContainer.unshow();
-                sessionStorage.removeItem('bookingSuccess');
+                // no unshow here since it's already a registered listener in the Modal class
+                sessionStorage.removeItem(sessionItem);
             });
-    
+            
             modalSubmit.addEventListener('click', function() {
                 modalContainer.unshow();
-                sessionStorage.removeItem('bookingSuccess');
+                sessionStorage.removeItem(sessionItem);
             });
+            
+            modalContainer.show();
 
             return;
         }

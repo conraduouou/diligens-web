@@ -8,7 +8,11 @@ export class Modal extends HideableElement {
 }
 
 export function wrapTextInButton(buttonText, isSubmit) {
-    return `<button id="${isSubmit ? "modal-submit" : "modal-cancel"}">${buttonText}</button>`;
+    return `<button 
+    id="${isSubmit ? "modal-submit" : "modal-cancel"}"
+    class="${isSubmit ? "modal-submit" : "modal-cancel"}">
+    ${buttonText}
+    </button>`;
 }
 
 export function setModalTitle(text) {

@@ -41,15 +41,15 @@
         </form>
     </div>
 
-    <div id="modal-container" class="no-show" tabindex="0">
-        <div id="modal" class="flex-container-col">
+    <div id="modal-container" class="modal-container no-show" tabindex="0">
+        <div id="modal" class="modal flex-container-col">
             <p id="modal-title" class="text-style-display text-style-weight-bold text-style-size-36 color-neutral-900 margin-none"></p>
             <div class="modal-line"></div>
             <div class="modal-content">
                 <p id="modal-content-main" class="text-style-display text-style-weight-bold text-style-size-28 color-neutral-900"></p>
                 <p id="modal-content-sub" class="text-style-display text-style-weight-medium text-style-size-20 color-neutral-600"></p>
             </div>
-            <div id="modal-button-container" class="text-style-display text-style-weight-semibold text-style-size-28 color-neutral-900 flex-container-row"></div>
+            <div id="modal-button-container" class="modal-button-container text-style-display text-style-weight-semibold text-style-size-28 color-neutral-900 flex-container-row"></div>
         </div>
     </div>
 

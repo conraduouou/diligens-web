@@ -70,8 +70,8 @@
         </div>
     </div>
 
-    <div id="modal-container" class="no-show" tabindex="0">
-        <div id="modal" class="flex-container-col">
+    <div id="modal-container" class="no-show modal-container" tabindex="0">
+        <div class="modal flex-container-col">
             <p class="text-style-display text-style-weight-bold text-style-size-36 color-neutral-900 margin-none">
                 Submit booking
             </p>
@@ -88,8 +88,8 @@
                 </p>
             </div>
             <div class="modal-button-container text-style-display text-style-weight-semibold text-style-size-28 color-neutral-900 flex-container-row">
-                <button id="modal-cancel">Cancel</button>
-                <button id="modal-submit">Yes</button>
+                <button id="modal-cancel" class="modal-cancel">Cancel</button>
+                <button id="modal-submit" class="modal-submit">Yes</button>
             </div>
         </div>
     </div>
