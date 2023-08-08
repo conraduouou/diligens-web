@@ -26,7 +26,7 @@ async function submitForm(form) {
             body += pair[0] + '=' + pair[1] + '&';
         }
 
-        const request = await fetch('diligens/web/src/models/create_message.php', {
+        const request = await fetch('/diligens_web/src/models/create_message.php', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
             body: body,
@@ -38,7 +38,6 @@ async function submitForm(form) {
             sessionStorage.setItem('appointmentSuccess', 'true');
             return true;
         } else {
-            alert(jsonResponse);
             return false;
         }
     } catch (error) {
@@ -93,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const isSuccess = await submitForm(form.element);
 
             if (isSuccess) {
-                window.location.replace('diligens_web/index.php');
+                window.location.replace('/diligens_web/index.php');
             } else {
                 modal.setModalTitle('Error');
                 modal.setModalMainContent('There was an error making this request.');
