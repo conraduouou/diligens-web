@@ -3,20 +3,24 @@
     top: 0px;
     background: #FFFFFF;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
-}
-
-.navbar nav {
+    padding: 20px 48px 20px 64px;
     display: flex;
     justify-content: space-between;
-    gap: 160px;     /* fixed value when right section gets too big */
-    align-items: center;
-    padding: 20px 48px 20px 64px;
+    gap: 160px;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: start;
+        gap: 0;
+    }
 }
 
 .diligens {
     display: flex;
-    gap: 16px;
     align-items: center;
+    gap: 16px;
 }
 
 .diligens h2 {
@@ -30,16 +34,52 @@
     color: #1F821A;
 }
 
-.right-section {
-    padding-top: 20px;
+.right-section-button {
+    display: none;
+    border: unset;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar > div:first-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .right-section-button {
+        display: inline-block;
+        background-color: white;
+        border: 2px solid #3CA629;
+        border-radius: 8px;
+        padding: 8px 12px;
+        height: min-content;
+        transition: background-color 0.2s ease;
+    }
+
+    .right-section-button:hover {
+        background-color: #e0e0e0;
+    }
+
+    .right-section-button img {
+        width: 32px;
+    }
+}
+
+.right-section-links {
     display: flex;
+    align-items: center;
     gap: clamp(24px, 2vw, 64px);
 }
 
-@media screen and (max-width: 1024px) { 
-    .right-section {
+@media screen and (max-width: 1024px) {
+    .right-section-links {
+        display: none;
+    }
+
+    .active {
         display: flex;
         flex-direction: column;
+        align-items: end;
         gap: 16px;
     }
 }
