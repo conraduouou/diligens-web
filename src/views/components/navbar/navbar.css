@@ -68,12 +68,13 @@
 .right-section-links {
     display: flex;
     align-items: center;
+    padding-top: 10px;
     gap: clamp(24px, 2vw, 64px);
 }
 
 @media screen and (max-width: 1024px) {
     .right-section-links {
-        display: none;
+        display: none;   
     }
 
     .active {
@@ -86,7 +87,6 @@
 
 /* Stories */
 .link {
-    color: white;
     text-align: right;
     text-decoration: none;
     font-family: 'IBM Plex Sans';
@@ -100,10 +100,10 @@
     transition: color 0.2s ease;
 }
 
-nav .link:hover {
+.link:hover {
     color: #46c33f;
 }
 
-nav .selected {
+.selected {
     color: #46c33f;
 }

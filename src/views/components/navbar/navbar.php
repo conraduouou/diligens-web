@@ -12,11 +12,11 @@
                 <img class="diligens-logo" src="<?php echo PROJECT_ROOT_PATH . '/assets/logo.svg' ?>" alt="Logo" style="height: 80px;">
                 <h2>Diligens</h2>
             </a>
-            <button class="right-section-button">
+            <button id="right-section-button" class="right-section-button">
                 <img src="<?= PROJECT_ROOT_PATH . '/assets/ic-burger.svg' ?>" alt="expand links icon">
             </button>
         </div>
-        <div class="right-section-links">
+        <div id="right-section-links" class="right-section-links">
             <a class="link" href="/diligens_web/index.php/stories">Stories</a>
             <a class="link" href="/diligens_web/index.php/about-us">About Us</a>
             <a class="link" href="/diligens_web/index.php/contact-us">Contact Us</a>
@@ -26,5 +26,7 @@
         </div>
     </header>
 </body>
+
+<script src="<?= PROJECT_ROOT_PATH . '/' . CONTROLLERS_PATH . '/components/navbar/navbar.js' ?>" ></script>
 
 </html>
