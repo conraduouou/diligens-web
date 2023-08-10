@@ -35,6 +35,12 @@
     color: #1F821A;
 }
 
+@media screen and (max-width: 332px) {
+    .diligens h2 {
+        display: none;
+    }
+}
+
 .right-section-button {
     display: none;
     border: unset;
