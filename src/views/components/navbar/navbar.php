@@ -9,7 +9,7 @@
     <header class="navbar">
         <div>
             <a class="diligens" href="/diligens_web/index.php">
-                <img class="diligens-logo" src="<?php echo PROJECT_ROOT_PATH . '/assets/logo.svg' ?>" alt="Logo" style="height: 80px;">
+                <img class="diligens-logo" src="<?php echo PROJECT_ROOT_PATH . '/assets/logo.svg' ?>" alt="Logo">
                 <h2>Diligens</h2>
             </a>
             <button id="right-section-button" class="right-section-button">
@@ -27,6 +27,6 @@
     </header>
 </body>
 
-<script src="<?= PROJECT_ROOT_PATH . '/' . CONTROLLERS_PATH . '/components/navbar/navbar.js' ?>" ></script>
+<script src="<?= PROJECT_ROOT_PATH . '/' . CONTROLLERS_PATH . '/components/navbar/navbar.js' ?>"></script>
 
 </html>
