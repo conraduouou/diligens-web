@@ -43,12 +43,11 @@
 
             <?php
             $buttonLink = BASE_URL_PATH . '/services';
-            $padding = 40;
             $buttonText = 'Check out our Services';
             include COMPONENTS_PATH . '/primary_button/primary_button.php';
             ?>
         </div>
-        <img src="assets/illustration2.svg" alt="Illustration 2">
+        <img class="services-section-img" src="assets/illustration2.svg" alt="Illustration 2">
     </div>
     <div class="stories-section flex-container-col color-green-700">
         <img src="assets/divider.svg" alt="divider" class="divider">

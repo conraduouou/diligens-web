@@ -10,7 +10,13 @@
 
 .divider {
     height: 26px;
-    margin: 60px auto 60px
+    margin: 60px auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .divider {
+        margin: 7vh;
+    }
 }
 
 /*** FIRST ***/
@@ -43,7 +49,7 @@
         justify-content: start;
         align-items: center;
         gap: 20px;
-        height: 72svh;
+        height: max(400px, 72svh);
     }
 
     .first-section-header {
@@ -65,6 +71,7 @@
 .services-section {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
     padding: 60px 12% 20px 14%;
 }
 
@@ -87,22 +94,27 @@
 
 .services-section .primary-button {
     font-size: clamp(20px, 2vw, 28px);
+    padding: 24px 40px;
+}
+
+.services-section-img {
+    width: 36vw;
 }
 
 @media screen and (max-width: 1200px) {
     .services-section {
         padding: 0;
-        margin-top: 6vmin;
+        margin-top: 7vmin;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         gap: 20px;
-        height: 100svh;
+        height: max(400px, 76svh);
     }
 
-    .services-section img {
-        max-height: 50%;
-        width: clamp(260px, 47vmax, 600px);
+    .services-section-img {
+        max-height: 42%;
+        width: clamp(260px, 45vmax, 400px);
     }
 
     .services-section-first {
@@ -133,11 +145,16 @@
         text-align: center;
         margin: 0;
         margin-bottom: 36px;
-        width: clamp(260px, 47vmax, 600px);
+        width: clamp(260px, 52vmax, 600px);
     }
 
     .services-section-caption br {
         display: none;
+    }
+
+    .services-section .primary-button {
+        padding: clamp(16px, 2vmax, 24px) 28px;
+        font-size: clamp(12px, 2vmax, 20px);
     }
 }
 

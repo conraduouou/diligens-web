@@ -1,9 +1,6 @@
 .primary-button:link, .primary-button:visited, .primary-button {
     display: inline-block;
     background-color: #1f821a;
-    padding: var(--padding);
-    padding-top: 24px;
-    padding-bottom: 24px;
     border: unset;
     border-radius: 24px;
     width: max-content;
