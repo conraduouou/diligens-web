@@ -29,16 +29,14 @@
             </p>
         </div>
     </div>
-    <div class="services-section flex-container-row">
+    <div class="services-section">
         <div class="services-section-first color-green-700">
-            <div class="services-section-header-div flex-container-row">
+            <div class="services-section-header-div">
                 <img src="assets/logo.svg" class="logo" alt="Diligens Logo" height=105px>
-                <h2
-                    class="services-section-header text-style-display text-style-size-60 text-style-weight-bold margin-vertical-auto">
+                <h2 class="services-section-header text-style-display text-style-weight-bold">
                     Our Services</h2>
             </div>
-            <p
-                class="services-section-caption text-style-label text-style-weight-medium text-style-size-28 text-style-align-justify">
+            <p class="services-section-caption text-style-label text-style-weight-medium">
                 We offer valuable insights to assist you in making well-informed business decisions. <br><br>
                 We don't consist of experts for nothing. Try contacting us now!
             </p>
@@ -50,19 +48,14 @@
             include COMPONENTS_PATH . '/primary_button/primary_button.php';
             ?>
         </div>
-        <div class="flex-expand"></div>
-        <div>
-            <img src="assets/illustration2.svg" alt="Illustration 2">
-        </div>
+        <img src="assets/illustration2.svg" alt="Illustration 2">
     </div>
     <div class="stories-section flex-container-col color-green-700">
         <img src="assets/divider.svg" alt="divider" class="divider">
-        <h2
-            class="stories-section-header text-style-display text-style-weight-bold text-style-size-60 text-style-align-center">
+        <h2 class="stories-section-header text-style-display text-style-weight-bold text-style-size-60 text-style-align-center">
             Hear out our Stories
         </h2>
-        <p
-            class="stories-section-caption text-style-display text-style-weight-medium text-style-size-28 text-style-align-center">
+        <p class="stories-section-caption text-style-display text-style-weight-medium text-style-size-28 text-style-align-center">
             We like stories with good endings. We'll help you get yours, too.
         </p>
         <div class="stories-section-stories flex-container-row">
@@ -89,8 +82,7 @@
         ?>
     </div>
     <div class="news-section flex-container-col">
-        <h2
-            class="news-section-header color-green-700 text-style-display text-style-weight-semibold text-style-size-48">
+        <h2 class="news-section-header color-green-700 text-style-display text-style-weight-semibold text-style-size-48">
             Stay informed!<br>
             Explore our latest articles.
         </h2>
@@ -118,16 +110,13 @@
         </div>
     </div>
     <div class="room-section flex-container-col">
-        <h2
-            class="room-section-header text-style-display text-style-align-center text-style-weight-bold text-style-size-48 color-white">
+        <h2 class="room-section-header text-style-display text-style-align-center text-style-weight-bold text-style-size-48 color-white">
             Looking for a meeting room?
         </h2>
-        <p
-            class="room-section-caption text-style-title text-style-align-center text-style-weight-medium text-style-size-28 color-white">
+        <p class="room-section-caption text-style-title text-style-align-center text-style-weight-medium text-style-size-28 color-white">
             We got rooms available for your purposes. Tell us what you need!
         </p><a id="appointment"></a>
-        <a type="button" href="<?php echo BASE_URL_PATH . '/rooms' ?>"
-            class="secondary-button margin-auto text-style-label text-style-weight-bold text-style-size-28 color-green-700">
+        <a type="button" href="<?php echo BASE_URL_PATH . '/rooms' ?>" class="secondary-button margin-auto text-style-label text-style-weight-bold text-style-size-28 color-green-700">
             Go to Rooms
         </a>
     </div>
@@ -160,8 +149,8 @@
     <?php
     include COMPONENTS_PATH . '/footer/footer.php';
     ?>
-    
-    <script type="module" src="<?= PROJECT_ROOT_PATH . '/' . CONTROLLERS_PATH . '/pages/home/home.js' ?>" ></script>
+
+    <script type="module" src="<?= PROJECT_ROOT_PATH . '/' . CONTROLLERS_PATH . '/pages/home/home.js' ?>"></script>
 </body>
 
 </html>

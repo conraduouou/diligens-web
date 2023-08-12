@@ -7,7 +7,7 @@
     border: unset;
     border-radius: 24px;
     width: max-content;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
     cursor: pointer;
 }
 

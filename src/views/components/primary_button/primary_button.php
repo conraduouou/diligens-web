@@ -14,7 +14,7 @@
      if ($padding)
          echo 'style="--padding: ' . $padding . 'px"';
      ?>>
-   <span class="text-style-label text-style-weight-bold text-style-size-28">
+   <span class="text-style-label text-style-weight-bold">
             <?php echo $buttonText ?>
         </span>
     </a>
