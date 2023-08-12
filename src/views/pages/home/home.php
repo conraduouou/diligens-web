@@ -15,16 +15,15 @@
 <body>
     <?php include COMPONENTS_PATH . '/navbar/navbar.php' ?>
 
-    <div class="first-section flex-container-row">
+    <div class="first-section">
         <img src="assets/illustration1.svg" alt="illustration 1" class="illustration">
-        <div class="flex-expand"></div>
-        <div class="color-green-700 margin-auto text-style-align-center">
-            <h2 class="first-section-header text-style-display text-style-size-60 text-style-weight-bold">
+        <div class="color-green-700 text-style-align-center">
+            <h2 class="first-section-header text-style-display text-style-weight-bold">
                 We are
                 <span class="text-style-italic">HERE</span>
                 to help!
             </h2>
-            <p class="text-style-display text-style-size-28 text-style-weight-medium margin-none">
+            <p class="text-style-display text-style-weight-medium margin-none">
                 Empowering your success with expert guidance—<br>
                 we got you!
             </p>
